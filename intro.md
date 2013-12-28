@@ -9,8 +9,9 @@
 * 为什么选择 Ruby on Rails ？
 
   因为我最喜欢的几个网站都采用了 Rails 来开发，包括 Github, Linkedin, Twitter, Groupon 等这些让我们激动和尖叫的网站。
+  如果我们早一点学会 Ruby on Rails，或许我们就能做出下一个 Twitter。
 
-[TOP50用Ruby on Rails开发的网站](http://developer.51cto.com/art/200904/121203_all.htm)
+  [TOP50用Ruby on Rails开发的网站](http://developer.51cto.com/art/200904/121203_all.htm)
 
 * 需要多久能学会？
 
