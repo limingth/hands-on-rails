@@ -5,6 +5,7 @@
 * 什么是 Ruby on Rails ?
 
   Ruby on Rails (简称 Rails) 是一套基于 Ruby 语言的 Web 开发框架。
+  
   参考阅读：[http://zh.wikipedia.org/wiki/Ruby_on_Rails](http://zh.wikipedia.org/wiki/Ruby_on_Rails)
 
 * 为什么我选择 Ruby on Rails ？
@@ -28,6 +29,6 @@
 * 我现在就想体验一下 Rails 开发，我该怎么开始？
 
   [https://www.nitrous.io/](https://www.nitrous.io/) 注册一个帐号，无需安装运行环境，即可开始体验。
-  在网站首页左侧有一个视频，大约7分钟时间，看完这个视频然后再花大约15分钟你就可以实现你的第一个 Rails 程序。
+  在网站首页左侧有一个[视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1)，大约7分钟时间，看完这个视频然后再花大约15分钟你就可以实现你的第一个 Rails 程序。
   
 * So Let's start...
