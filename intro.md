@@ -35,6 +35,6 @@
   [https://www.nitrous.io/](https://www.nitrous.io/) 注册一个帐号，无需安装运行环境，即可开始体验。  
   在网站首页左侧有一个[Rails开发介绍视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1)，大约7分钟时间，看完这个视频然后再花大约15分钟跟做一遍，你就可以实现你的第一个 Rails 程序。
 
-* 还等什么，赶紧开始试试... 
+* 还等什么，赶紧试试... 
 
   No more wait, Let's start！
