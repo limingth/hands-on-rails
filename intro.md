@@ -30,7 +30,7 @@
   第3个月开始模仿 linkedin 来实现一个社交网站，你可以基于性格爱好的共同点来认识朋友。  
   此时，虽然你还不能算一个Rails高手，但已经可以称自己是一个Rails工程师了。
 
-* 我现在就想体验一下 Rails 开发，我该怎么开始？
+* 现在就想体验一下 Rails 开发，该怎么开始？
         
   [https://www.nitrous.io/](https://www.nitrous.io/) 注册一个帐号，无需安装运行环境，即可开始体验。  
   在网站首页左侧有一个[Rails开发介绍视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1)，大约7分钟时间，看完这个视频然后再花大约15分钟跟做一遍，你就可以实现你的第一个 Rails 程序。
