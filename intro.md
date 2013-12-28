@@ -5,13 +5,14 @@
 * 什么是 Ruby on Rails ?
 
   Ruby on Rails (简称 Rails) 是一套基于 Ruby 语言的 Web 开发框架。
+  参考阅读：[http://zh.wikipedia.org/wiki/Ruby_on_Rails](http://zh.wikipedia.org/wiki/Ruby_on_Rails)
 
-* 为什么选择 Ruby on Rails ？
+* 为什么我选择 Ruby on Rails ？
 
   因为我最喜欢的几个网站都采用了 Rails 来开发，包括 Github, Linkedin, Twitter, Groupon 等这些让我们激动和尖叫的网站。
   如果我们早一点学会 Ruby on Rails，或许我们就能做出下一个 Twitter。
 
-  [TOP50用Ruby on Rails开发的网站](http://developer.51cto.com/art/200904/121203_all.htm)
+  参考阅读：[TOP50用Ruby on Rails开发的网站](http://developer.51cto.com/art/200904/121203_all.htm)
 
 * 需要多久能学会？
 
@@ -21,8 +22,8 @@
 
 * 应该怎样学习 Rails ？
 
-  很简单，在项目中学习，跟着老师学习，在编程中学习，跟老师一起编程。
-  我们认为一对一结对编程是最有效的编程学习方法。
+  很简单只有四句话：在项目中学习，跟着老师学习，在编程中学习，跟老师一起编程。
+  我们认为一对一结对编程是最有效的编程学习方法，老师演示，学生跟做，到了一定阶段学生就可以自己独立进行开发。
 
 * 我现在就想体验一下 Rails 开发，我该怎么开始？
 
