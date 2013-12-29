@@ -49,17 +49,17 @@
   - 哈希表
 
 ### 开发环境准备
-* [github.com](github.com) 帐号注册  
-  - 项目代码版本管理工具
+* 项目代码版本管理工具
+  - [github.com](github.com) 帐号注册
 
-* [nitrous.io](nitrous.io) 帐号注册  
-  - 远端开发IDE和网站部署
+* 远端开发IDE和网站部署
+  - [nitrous.io](nitrous.io) 帐号注册  
 
-* [stackoverflow.com](stackoverflow.com) 帐号注册  
-  - 技术常见问题解答和社区
+* 技术常见问题解答和社区
+  - [stackoverflow.com](stackoverflow.com) 帐号注册  
 
 * ruby 环境本地搭建  
-[Mac 安装流程](https://github.com/limingth/myRoR/blob/master/0-how-to-install.md)
+  - [Mac 安装流程](https://github.com/limingth/myRoR/blob/master/0-how-to-install.md)
 
-* sublime text 2 编辑工具安装  
-[下载](http://www.sublimetext.com/2)
+* sublime text 2 编辑工具  
+  - [下载安装](http://www.sublimetext.com/2)
