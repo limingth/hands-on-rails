@@ -39,7 +39,7 @@
 <https://github.com/limingth/myRoR/blob/master/NCRoR/9.rb>
 
 
-### 项目大作业
+### 大作业
 * 约瑟夫环问题  
 已知n个人（以编号1，2，3...n分别表示）围坐在一张圆桌周围。
 从编号为k的人开始报数，数到m的那个人出列；
@@ -48,3 +48,18 @@
 
 * [问题详细描述](http://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98)
 * [参考C程序设计](https://github.com/limingth/NCCL/blob/master/Unit-1/Lesson-10.md)
+
+### 开源项目
+* 网络爬虫  
+参考开源项目 [rubycrawler](https://github.com/limingth/hands-on-rails/tree/master/rubycrawler)
+阅读代码并理解一下技术要点：
+	- 学会栈的设计
+	- 掌握 open-uri 库的用法
+	- 区分全局变量和局部变量
+	- 了解正则表达式的基本概念
+	- 了解ruby class 类的实现
+	- 函数的接口设计、传参和返回值
+	- 程序设计方法和设计模式
+
+* 增添新的功能  
+目前的代码已经完成了在一个网站内部的全部页面的抓取和解析，请实现对外部网站的链接抓取，并记录全部页面的抓取结果。

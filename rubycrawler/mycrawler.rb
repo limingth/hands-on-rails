@@ -14,9 +14,9 @@ end
 
 dprint "My email crawler v1.0"
 
-$rooturl = "http://www.innocamp.net"	# http:// is necessary for open()
+#$rooturl = "http://www.innocamp.net"	# http:// is necessary for open()
 #$rooturl = "http://www.akaedu.us"	# http:// is necessary for open()
-#$rooturl = "http://www.akaedu.org"	# http:// is necessary for open()
+$rooturl = "http://www.akaedu.org"	# http:// is necessary for open()
 #$rooturl = "http://www.mitbbs.com"	# http:// is necessary for open()
 #$rooturl = "http://www.wenxuecity.com"	# http:// is necessary for open()
 #$rooturl = "http://bbs.wenxuecity.com"
@@ -44,6 +44,8 @@ $links_crawled = []
 
 $pushcnt = 0
 $popcnt= 0
+
+$crawled_pushcnt = 0
 
 class Util
 	def Util.write fname, msg
@@ -102,6 +104,8 @@ class Util
 		end
 		dprint url
 
+		url = url.chomp("\n")
+		url = url.chomp("/")
 		return url
 	end
 end
@@ -114,10 +118,8 @@ class Crawl
 
 		begin
 			dprint "open url: " + @url
-			dprint "html: " + @html.to_s
-			puts "try open " + @url
 			@html = open(@url).read
-			puts "open and read ok"
+			dprint "html: " + @html.to_s
 		end
 			dprint "html: " + @html.to_s
 			if @html.to_s == ''
@@ -137,26 +139,40 @@ class Crawl
 
 			if match != nil && !$emails.include?(match)
 				$emails.push match
-				dprint "+ save " + match
-				puts match
+				puts "+ add email: " + match
 				Util.write($email_file, match)
 			end
 		end
 	end
 	
 	def get_links
+		if ($links_crawled.length+$links_stack.length) > $max_pages
+			return
+		end
+
 		@html.scan($link_regex) do |match|
 			dprint "find link: " + match
 
 			u = Util.format_url(match, @url)
+			dprint "format url: " + u.to_s
+
 			if u != nil 
-				dprint "find u: " + u
-				if match != nil && !$links_crawled.include?(match) && $links_stack.rassoc(match) == nil
-					u = u.delete("\n")
-					$pushcnt = $pushcnt+ 1
-					puts "^ push " + $pushcnt.to_s + " " + u + " " + @depth.to_s 
-					$links_stack.push [@depth, u]
+				puts "\n-> find url: " + u
+				dprint $links_crawled
+
+				if $links_stack.rassoc(u)
+					puts "x already in links_stack"
+					next
 				end
+
+				if $links_crawled.include?(u)
+					puts "x has been crawled"
+					next
+				end
+
+				$pushcnt = $pushcnt+ 1
+				puts "^ push stack " + $pushcnt.to_s + " " + u + " " + @depth.to_s 
+				$links_stack.push [@depth, u]
 			end
 		end
 	end
@@ -164,42 +180,48 @@ class Crawl
 end
 
 
-$count = 1
-0.upto($max_depth) do |i|
-	dprint i
 
-	if i == 0
-		c = Crawl.new($rooturl, i+1)
-		c.get_emails	
-		c.get_links
-		$links_crawled.push $rooturl
-	end 
+# push the root url to links_stack
+$links_stack.push [0, $rooturl]
 
-	while $links_stack.length != 0
-		dprint 'count->'+String($count)
-		dprint 'stack->'+String($links_stack.length)
-		dprint 'crawled->'+String($links_crawled.length)
+# while stack is not empty
+while $links_stack.length != 0
+	dprint 'links stack ->'+String($links_stack.length)
+	dprint 'links crawled ->'+String($links_crawled.length)
 
-		$count = $count + 1
+	# get the item at the head of queue
+	# That's called breadth-first-search  
+	puts "\n--- #{$popcnt} page crawling"
+	link = $links_stack.shift
+	@dep = link[0]
+	@url = link[1]
 
-		# get the item at the head of queue
-		# That's called breadth-first-search  
-		link = $links_stack.shift
-		$popcnt = $popcnt + 1
-		puts "@ pop " + $popcnt.to_s + " " + link[1] + " " + link[0].to_s 
+	$popcnt = $popcnt + 1
+	puts "@ pop " + $popcnt.to_s + " " + $dep.to_s + " " + @url.to_s 
 
-		if link[0] == i + 1
-			c = Crawl.new(link[1], i+2)
-			if ($links_crawled.length+$links_stack.length) <= $max_pages
-				c.get_links
-			end
-			c.get_emails
-			$links_crawled.push link[1]
-		else
-			break
-		end
+
+	# if current link[0] level reach to max depth, then break
+	if @dep == $max_depth + 1 
+		break
 	end
-	
+
+	# add 1 level from current one to expand
+	puts "  try open " + @url
+	c = Crawl.new(@url, @dep+1)
+	puts "  open and read ok"
+
+	# first we search emails and push this @url to $links_crawled
+	c.get_emails	
+
+	# add to links crawled stack
+	$crawled_pushcnt += 1
+	$links_crawled.push @url
+	puts "^ push crawled " + $crawled_pushcnt.to_s + " " + @url
+	dprint $links_crawled
+
+
+	# then we try to get links from this @url
+	c.get_links
 end
 
 puts $email_file
