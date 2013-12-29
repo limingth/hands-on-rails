@@ -4,4 +4,4 @@
 
 * [Lesson 0 - 课程介绍](0-intro.md)
 
-* [Lesson 1 - Ruby 基础](1-ruby-basic.md)
+* [Lesson 1 - Ruby 语言基础](1-ruby-basic.md)
