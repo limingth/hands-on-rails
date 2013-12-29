@@ -49,3 +49,7 @@
         - 哈希表
 
 ### 学习环境准备
+* github 帐号注册
+* nitrous 帐号注册
+* ruby 环境本地搭建
+* sublime text 2 编辑工具安装
