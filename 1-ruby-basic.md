@@ -51,8 +51,7 @@
 
 ### 开源项目
 * 网络爬虫  
-参考开源项目 [rubycrawler](https://github.com/limingth/hands-on-rails/tree/master/rubycrawler)
-阅读代码并理解一下技术要点：
+参考开源项目 [rubycrawler](https://github.com/limingth/hands-on-rails/tree/master/rubycrawler), 阅读代码并理解以下技术要点：
 	- 学会栈的设计
 	- 掌握 open-uri 库的用法
 	- 区分全局变量和局部变量
@@ -62,4 +61,4 @@
 	- 程序设计方法和设计模式
 
 * 增添新的功能  
-目前的代码已经完成了在一个网站内部的全部页面的抓取和解析，请实现对外部网站的链接抓取，并记录全部页面的抓取结果。
+目前的代码已经完成了在一个网站内部页面的抓取和解析，请实现对外部网站的链接抓取，并记录全部抓取过的页面和抓取结果。
