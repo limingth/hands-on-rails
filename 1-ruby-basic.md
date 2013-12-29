@@ -26,9 +26,10 @@
 * 函数设计
 <https://github.com/limingth/myRoR/blob/master/NCRoR/8.rb>
 
-#### 
-
-
+* 输入输出
+<https://github.com/limingth/myRoR/blob/master/NCRoR/9.rb>
 
 
 ### 项目大作业
+* 约瑟夫环问题
+[参考C程序设计](https://github.com/limingth/NCCL/blob/master/Unit-1/Lesson-10.md)
