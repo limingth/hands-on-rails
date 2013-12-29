@@ -5,6 +5,22 @@
 ### test the crawler for one page
 	limingth@gmail ~/Github/hands-on-rails/rubycrawler$ make
 	./mycrawler.rb
+	www.akaedu.us
+	2013-12-29 11:54:49 -0800_www.akaedu.us.dat
+
+	--- 0 page crawling
+	@ pop 1  http://www.akaedu.us
+	  try open http://www.akaedu.us
+	  open and read ok
+	+ add email: info.ch@itu.edu
+	+ add email: enroll@akaedu.us
+	^ push crawled 1 http://www.akaedu.us
+	2013-12-29 11:54:49 -0800_www.akaedu.us.dat
+	limingth@gmail ~/Github/hands-on-rails/rubycrawler$ 
+
+### test the crawler for multi pages
+	limingth@gmail ~/Github/hands-on-rails/rubycrawler$ make
+	./mycrawler.rb
 	www.akaedu.org
 	2013-12-29 11:33:21 -0800_www.akaedu.org.dat
 
@@ -323,4 +339,48 @@
 
 	-> find url: http://www.akaedu.org
 	x has been crawled
+
+	--- 2 page crawling
+	@ pop 3  http://www.akaedu.org/pages/about01.htm
+	  try open http://www.akaedu.org/pages/about01.htm
+	  open and read ok
+	^ push crawled 3 http://www.akaedu.org/pages/about01.htm
+
+	--- 3 page crawling
+	@ pop 4  http://www.akaedu.org/pages/team01.htm
+	  try open http://www.akaedu.org/pages/team01.htm
+	  open and read ok
+	^ push crawled 4 http://www.akaedu.org/pages/team01.htm
+
+	--- 4 page crawling
+	@ pop 5  http://www.akaedu.org/page/zyindex.php
+	  try open http://www.akaedu.org/page/zyindex.php
+	  open and read ok
+	+ add email: hongtao0615@sina.com
+	^ push crawled 5 http://www.akaedu.org/page/zyindex.php
+
+	-> find url: http://www.akaedu.org/favicon.ico
+	^ push stack 114 http://www.akaedu.org/favicon.ico 2
+
+	-> find url: http://www.akaedu.org
+	x has been crawled
+
+	-> find url: http://www.akaedu.org/pages/about04.php
+	x has been crawled
+
+	-> find url: http://www.akaedu.org/pages/about01.htm
+	x has been crawled
+
+	-> find url: http://www.akaedu.org/pages/team01.htm
+	x has been crawled
+
+	-> find url: http://www.akaedu.org/page/zyindex.php
+	x has been crawled
+
+	-> find url: http://www.akaedu.org/pages/ask01.htm
+	x already in links_stack
+
+	-> find url: http://www.akaedu.org/pages/about04.php
+	x has been crawled
+
 

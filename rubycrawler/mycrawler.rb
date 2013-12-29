@@ -14,9 +14,9 @@ end
 
 dprint "My email crawler v1.0"
 
+$rooturl = "http://www.akaedu.us"	# http:// is necessary for open()
 #$rooturl = "http://www.innocamp.net"	# http:// is necessary for open()
-#$rooturl = "http://www.akaedu.us"	# http:// is necessary for open()
-$rooturl = "http://www.akaedu.org"	# http:// is necessary for open()
+#$rooturl = "http://www.akaedu.org"	# http:// is necessary for open()
 #$rooturl = "http://www.mitbbs.com"	# http:// is necessary for open()
 #$rooturl = "http://www.wenxuecity.com"	# http:// is necessary for open()
 #$rooturl = "http://bbs.wenxuecity.com"
