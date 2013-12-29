@@ -1,8 +1,7 @@
-# Ruby on Rails Web 开发
 
-## hands-on-rails 在实践中学习 Rails 开发
+## Lesson 0 - 课程介绍
 
-### Lesson 0 关于课程你需要知道的 N 件事
+### 关于课程你需要知道的 N 件事
 
 * 什么是 Ruby on Rails ?
         
