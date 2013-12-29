@@ -38,5 +38,5 @@
 他的下一个人又从1开始报数，数到m的那个人又出列；
 依此规律重复下去，直到圆桌周围的人全部出列。
 
-[问题详细描述](http://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98)
-[参考C程序设计](https://github.com/limingth/NCCL/blob/master/Unit-1/Lesson-10.md)
+* [问题详细描述](http://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98)
+* [参考C程序设计](https://github.com/limingth/NCCL/blob/master/Unit-1/Lesson-10.md)
