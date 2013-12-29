@@ -48,8 +48,18 @@
   - 栈
   - 哈希表
 
-### 学习环境准备
-* github 帐号注册
-* nitrous 帐号注册
-* ruby 环境本地搭建
-* sublime text 2 编辑工具安装
+### 开发环境准备
+* github 帐号注册  
+<github.com>
+
+* nitrous 帐号注册  
+<nitrous.io>
+
+* StackOverflow 帐号注册  
+<stackoverflow.com>
+
+* ruby 环境本地搭建  
+[Mac 安装流程](https://github.com/limingth/myRoR/blob/master/0-how-to-install.md)
+
+* sublime text 2 编辑工具安装  
+[下载](http://www.sublimetext.com/2)
