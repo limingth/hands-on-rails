@@ -35,7 +35,7 @@
 
 * 还等什么，赶紧试试... 
 
-  No more wait, Let's start！ 学习[Rails开发介绍视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1)
+  No more wait, Let's start！ [学习 Rails 开发介绍视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1)
   
 ### 学习基础自测
 * C程序基础
@@ -62,4 +62,4 @@
   - [Mac 安装流程](https://github.com/limingth/myRoR/blob/master/0-how-to-install.md)
 
 * sublime text 2 编辑工具  
-  - [下载安装](http://www.sublimetext.com/2)
+  - [下载安装 sublime](http://www.sublimetext.com/2)
