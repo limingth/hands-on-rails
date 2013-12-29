@@ -14,18 +14,21 @@ end
 
 dprint "My email crawler v1.0"
 
-#$url = "http://www.akaedu.us"	# http:// is necessary for open()
-#$url = "http://www.innocamp.net"	# http:// is necessary for open()
-#$url = "http://www.akaedu.org"	# http:// is necessary for open()
-#$url = "http://www.mitbbs.com"	# http:// is necessary for open()
+$rooturl = "http://www.innocamp.net"	# http:// is necessary for open()
+#$rooturl = "http://www.akaedu.us"	# http:// is necessary for open()
+#$rooturl = "http://www.akaedu.org"	# http:// is necessary for open()
+#$rooturl = "http://www.mitbbs.com"	# http:// is necessary for open()
 #$rooturl = "http://www.wenxuecity.com"	# http:// is necessary for open()
 #$rooturl = "http://bbs.wenxuecity.com"
-$rooturl = "http://sfbay.craigslist.org"
-#$rooturl = "http://www.pkudsljfasdkjsjd.edu.cn"
+#$rooturl = "http://sfbay.craigslist.org"
 #$rooturl = "http://www.pku.edu.cn"
-$rooturl = "http://www.sofang.com"
-$rooturl = "http://bbs.wenxuecity.com"
-$email_file = "emails" + Time.now.to_s + ".dat"
+#$rooturl = "http://www.sofang.com"
+#$rooturl = "http://bbs.wenxuecity.com"
+
+$url_name = $rooturl.gsub(/http:\/\//, '')
+puts $url_name
+$email_file = Time.now.to_s + "_" + $url_name + ".dat"
+puts $email_file
 $max_depth = 10 
 $max_pages = 100000
 
@@ -80,8 +83,8 @@ class Util
 		end
 
 		if url[0, 4] == 'http'
-			#return url
-			return nil
+			#return url		
+			return nil	# we just search in this site
 		end
 
 		if url[0, 6] == 'mailto'
@@ -199,3 +202,4 @@ $count = 1
 	
 end
 
+puts $email_file
