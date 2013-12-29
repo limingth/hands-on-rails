@@ -1,7 +1,6 @@
-hands-on-rails
-==============
 
-try ruby on rails with hands-on projects
+# Ruby on Rails Web 开发
 
+## hands-on-rails 在实践中学习 Rails 开发
 
 * [Lesson 0 - 课程介绍](0-intro.md)
