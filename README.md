@@ -35,6 +35,8 @@
 * Lesson 11 - Adding Tags
 
 * Lesson 12 - Deploying，Optimizing and Scaling Application
+  - [User Story](http://www.mountaingoatsoftware.com/agile/user-stories)
+  - [example](https://www.pivotaltracker.com/s/projects/646869)
 
 
 
