@@ -6,21 +6,21 @@
 
 * [Lesson 1 - Ruby 语言基础](1-ruby-basic.md)
 
-* Lesson 2 - Web 开发基本流程
+* Lesson 2 - Web 开发流程
   - Git & GitHub
   - Heroku 部署
 
-* Lesson 3 - 项目1 UserHub 开发
+* Lesson 3 - 项目1：UserHub 开发
   - form 表单
   - 数据库基础
   - MVC 设计模式
 
-* Lesson 4 - 项目2 类 Wiki 博客网站开发
+* Lesson 4 - 项目2：类 Wiki 博客网站开发
   - route 概念
   - layout 布局
   - Bootstrap 
   
-* Lesson 5 - 项目3 类 Weibo 微博网站开发
+* Lesson 5 - 项目3：类 Weibo 微博网站开发
 
 * Lesson 6 - Sign up and Sign in
 
@@ -28,7 +28,7 @@
 
 * Lesson 8 - New Feature - gravatar
 
-* Lesson 9 - 项目4 SharedIn 社交网站开发
+* Lesson 9 - 项目4：SharedIn 社交网站开发
 
 * Lesson 10 - Sending Emails
 
