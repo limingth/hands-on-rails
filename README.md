@@ -3,10 +3,17 @@
 ## hands-on-rails 在实践中学习 Rails 开发
 
 * [Lesson 0 - 课程介绍](0-intro.md)
+  - 关于课程你需要知道的 N 件事
+  - 学习基础自测
+  - 开发环境准备
 
 * [Lesson 1 - Ruby 语言基础](1-ruby-basic.md)
+  - 什么是 Ruby？
+  - 体验一下 Ruby 编程
+  - Ruby 编程练习
+  - 课后大作业
 
-* Lesson 2 - Web 开发流程
+* [Lesson 2 - Web 开发流程](3-web-dev-basic.md)
   - Git & GitHub
   - Heroku 部署
 
