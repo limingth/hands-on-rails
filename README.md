@@ -18,34 +18,43 @@
   - 网站部署 Heroku 
 
 * Lesson 3 - 项目1：UserHub 开发
-  - 表单基础 form 
+  - 表单基础 Form 
   - 数据库基础 PostgreSQL
   - MVC 设计模式 Model-View-Controller
 
 * Lesson 4 - 项目2：类 Wiki 博客网站开发
-  - 路由概念 route 
-  - 页面布局 layout 
+  - 路由概念 Route 
+  - 页面布局 Layout 
   - 风格化 Bootstrap Styling
   
 * Lesson 5 - 项目3：类 Weibo 微博网站开发
-
-* Lesson 6 - 注册和登录 Sign up and Sign in
+  - 注册和登录 Sign up and Sign in
   - 密码加密和验证 bCrypt and secure password
   - 闪烁消息 flash message 
 
-* Lesson 7 - 用户验证和会话 User Authentication and Session
+* Lesson 6 
+  - 用户验证 User Authentication
   - 会话 Session
 
-* Lesson 8 - 新属性 
+* Lesson 7 
+  - 关注和取消关注 Follow and UnFollow
+  - 转发 Forward
+
+* Lesson 8 
   - 用户头像 gravatar
 
 * Lesson 9 - 项目4：SharedIn 社交网站开发
+  - 邮件发送 Sending Emails
+  - 添加标签 Adding Tags
 
-* Lesson 10 - 邮件发送 Sending Emails
+* Lesson 10 
 
-* Lesson 11 - 添加标签 Adding Tags
 
-* Lesson 12 - 部署、优化和扩展 Deploying，Optimizing and Scaling Application
+* Lesson 11 
+
+
+* Lesson 12 
+  - 部署、优化和扩展 Deploying，Optimizing and Scaling Application
   - [User Story](http://www.mountaingoatsoftware.com/agile/user-stories)
   - [example](https://www.pivotaltracker.com/s/projects/646869)
 
