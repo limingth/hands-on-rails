@@ -15,33 +15,37 @@
 
 * [Lesson 2 - Web 开发流程](3-web-dev-basic.md)
   - Git & GitHub
-  - Heroku 部署
+  - 网站部署 Heroku 
 
 * Lesson 3 - 项目1：UserHub 开发
-  - form 表单
-  - 数据库基础
-  - MVC 设计模式
+  - 表单基础 form 
+  - 数据库基础 PostgreSQL
+  - MVC 设计模式 Model-View-Controller
 
 * Lesson 4 - 项目2：类 Wiki 博客网站开发
-  - route 概念
-  - layout 布局
-  - Bootstrap 
+  - 路由概念 route 
+  - 页面布局 layout 
+  - 风格化 Bootstrap Styling
   
 * Lesson 5 - 项目3：类 Weibo 微博网站开发
 
-* Lesson 6 - Sign up and Sign in
+* Lesson 6 - 注册和登录 Sign up and Sign in
+  - 密码加密和验证 bCrypt and secure password
+  - 闪烁消息 flash message 
 
-* Lesson 7 - User Authentication and Session
+* Lesson 7 - 用户验证和会话 User Authentication and Session
+  - 会话 Session
 
-* Lesson 8 - New Feature - gravatar
+* Lesson 8 - 新属性 
+  - 用户头像 gravatar
 
 * Lesson 9 - 项目4：SharedIn 社交网站开发
 
-* Lesson 10 - Sending Emails
+* Lesson 10 - 邮件发送 Sending Emails
 
-* Lesson 11 - Adding Tags
+* Lesson 11 - 添加标签 Adding Tags
 
-* Lesson 12 - Deploying，Optimizing and Scaling Application
+* Lesson 12 - 部署、优化和扩展 Deploying，Optimizing and Scaling Application
   - [User Story](http://www.mountaingoatsoftware.com/agile/user-stories)
   - [example](https://www.pivotaltracker.com/s/projects/646869)
 
