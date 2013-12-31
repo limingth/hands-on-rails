@@ -50,13 +50,12 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 #### Heroku怎么读？
 HeroKu ，不读 Hero-Ku, 读作 Her-oh-koo ！
 
-* 学习了解更多关于 Heroku
+* 学习了解更多关于 Heroku  [Getting Started with Heroku](https://devcenter.heroku.com/articles/quickstart) 
 
-  [Getting Started with Heroku](https://devcenter.heroku.com/articles/quickstart) 
+#### 课后大作业
+将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。
 
-#### 动手实践
-
-  [host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
+* 动手实践 [host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
 
 * 参考资料 [Heroku Dev Center](https://devcenter.heroku.com/)
 
