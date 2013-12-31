@@ -53,19 +53,18 @@
 * 项目代码版本管理工具
   - [github.com](github.com) 帐号注册
 
-* 远端开发IDE和网站部署
+* 远端开发IDE和网站部署 （难度***）
   - [nitrous.io](nitrous.io) 帐号注册  
 
 * 技术常见问题解答和社区
   - [stackoverflow.com](stackoverflow.com) 帐号注册  
 
-* ruby 环境本地搭建  
+* ruby 环境本地搭建 （难度****）
   - [Mac 安装流程](https://github.com/limingth/myRoR/blob/master/0-how-to-install.md)
 
 * sublime text 2 编辑工具  
   - [下载安装 sublime](http://www.sublimetext.com/2)
 
-### 课堂作业
 完成上述工作后，你有两种方法写所有程序：
 
 * 1 本地安装了 Ruby + sublime text 2 ，通过 sublime 编写，运行 ruby yourprogram.rb 即可。
@@ -73,3 +72,6 @@
 * 2 注册并登录 nitrous.io ，通过 vim 编写，运行方法同上。
 
 **方法2 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1.**
+
+### 课堂作业
+完成 [Rails 开发视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1) 中的全部步骤，成功后将所有步骤的文本保存下来，并在本地桌面截图，然后提交。
