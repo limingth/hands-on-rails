@@ -37,6 +37,11 @@
 
 *- nnd，这都不知道，你还敢出来"结伙"？赶紧的 [Create a repo](https://help.github.com/articles/create-a-repo)*
 
+### Gist
+[Gist: Share the history of your writing](http://www.youtube.com/watch?v=EaW_k6jrt2I)
+
+### MarkDown
+[Markdown Basics 101](http://www.youtube.com/watch?v=oba3Czjyras)
 
 ### Heroku 部署网站
 
