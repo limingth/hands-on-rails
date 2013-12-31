@@ -35,11 +35,28 @@
 
 *- 啥是 repo?*
 
-*- nnd，这都不知道，你还敢出来混？赶紧的 [create a repo](https://help.github.com/articles/create-a-repo)*
+*- nnd，这都不知道，你还敢出来结伙？赶紧的 [create a repo](https://help.github.com/articles/create-a-repo)*
 
 
 ### Heroku 部署网站
-* [Getting Started with Heroku](https://devcenter.heroku.com/articles/quickstart)
-* [host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md)
-* [Heroku Dev Center](https://devcenter.heroku.com/)
+
+#### Heroku是什么？
+Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku自动将其部署在亚马逊的EC2上。
+
+你不用关心运行环境配置的问题，你只要专注于自己程序实现，其他的事情都交给Heroku来做。
+
+一个不完全确切但形象的比喻，Heroku就是一个使用Ruby的GAE - [Google App Engine](http://zh.wikipedia.org/zh/Google_App_Engine)。
+
+#### Heroku怎么读？
+HeroKu ，不读 Hero-Ku, 读作 Her-oh-koo ！
+
+* 学习了解更多关于 Heroku
+
+  [Getting Started with Heroku](https://devcenter.heroku.com/articles/quickstart) 
+
+#### 动手实践
+
+  [host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
+
+* 参考资料 [Heroku Dev Center](https://devcenter.heroku.com/)
 
