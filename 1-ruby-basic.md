@@ -9,6 +9,12 @@
 [在线学习Ruby语言](http://tryruby.org/levels/1/challenges/0)
 
 ### Ruby 编程练习
+先学习一下 ivb 的用法，观看视频 
+
+[IRB and Your First Ruby Program](http://teamtreehouse.com/library/ruby-foundations/ruby-basics/irb-and-your-first-ruby-program)
+
+[Ruby programming course](http://vimeo.com/21010874)
+
 完成以下的9个代码练习，可以先抄写三遍，然后自己独立实现一遍。
 
 * 注释写法  
