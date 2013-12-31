@@ -7,9 +7,9 @@
 
 *- 你 out 了，难道没听说，“不知道歌易特，活了也白活”？*
 
-赶紧了解一下吧。[about git](http://zh.wikipedia.org/zh/Git)
+赶紧了解一下吧。[About Git](http://zh.wikipedia.org/zh/Git)
 
-靠，东西太多看不过来？Look this [git guide](http://rogerdudler.github.io/git-guide/index.zh.html)
+靠，东西太多看不过来？Look this [Git Guide](http://rogerdudler.github.io/git-guide/index.zh.html)
 
 还是看不懂？没关系，看视频总会吧。 [Git 介绍视频](http://gitreal.codeschool.com/levels/1)
 
@@ -21,7 +21,7 @@
 #### 如何安装 Git？
 *- 我已经了解了什么是 Git ，也用过了几个命令，现在我想在自己机器上把它装起来。*
 
-*- 太好了，你真是一个勤奋好学的孩子，那么接下来挑战一下自己吧。试试？[set up git](https://help.github.com/articles/set-up-git)*
+*- 太好了，你真是一个勤奋好学的孩子，那么接下来挑战一下自己吧。试试？[Set up Git](https://help.github.com/articles/set-up-git)*
 
 ### GitHub
 *- 之前你应该已经注册好了 github 帐号吧？*
@@ -35,13 +35,13 @@
 
 *- 啥是 repo?*
 
-*- nnd，这都不知道，你还敢出来结伙？赶紧的 [create a repo](https://help.github.com/articles/create-a-repo)*
+*- nnd，这都不知道，你还敢出来"结伙"？赶紧的 [Create a repo](https://help.github.com/articles/create-a-repo)*
 
 
 ### Heroku 部署网站
 
 #### Heroku是什么？
-Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku自动将其部署在亚马逊的EC2上。
+Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku自动将其部署在[亚马逊的EC2](http://zh.wikipedia.org/zh/Amazon_EC2)上。
 
 你不用关心运行环境配置的问题，你只要专注于自己程序实现，其他的事情都交给Heroku来做。
 
@@ -55,7 +55,7 @@ HeroKu ，不读 Hero-Ku, 读作 Her-oh-koo ！
 #### 课后大作业
 将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。
 
-* 动手实践 [host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
+* 动手实践 [Host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
 
 * 参考资料 [Heroku Dev Center](https://devcenter.heroku.com/)
 
