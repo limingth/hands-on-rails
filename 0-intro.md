@@ -64,3 +64,12 @@
 
 * sublime text 2 编辑工具  
   - [下载安装 sublime](http://www.sublimetext.com/2)
+
+### 课堂作业
+完成上述工作后，你有两种方法写所有程序：
+
+* 1 本地安装了 Ruby + sublime text 2 ，通过 sublime 编写，运行 ruby yourprogram.rb 即可。
+
+* 2 注册并登录 nitrous.io ，通过 vim 编写，运行方法同上。
+
+**方法2 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1.**
