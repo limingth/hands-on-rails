@@ -38,4 +38,8 @@
 *- nnd，这都不知道，你还敢出来混？赶紧的 [create a repo](https://help.github.com/articles/create-a-repo)*
 
 
+### Heroku 部署网站
+* [Getting Started with Heroku](https://devcenter.heroku.com/articles/quickstart)
+* [host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md)
+* [Heroku Dev Center](https://devcenter.heroku.com/)
 
