@@ -9,9 +9,11 @@
 
 * 为什么我选择 Ruby on Rails ？
   
-  因为我最喜欢的几个网站都采用了 Rails 来开发，包括 Github, Linkedin, Twitter, Groupon 等这些让我们激动和尖叫的网站。
+  因为我最喜欢的几个网站最初都采用了 Rails 来开发，包括 Github, Linkedin, Twitter, Groupon 这些让我们激动和尖叫的网站。
   如果我们早一点学会 Ruby on Rails，或许我们就能做出下一个 Twitter (成立不到8年，现在市值400亿美金)。  
   参考阅读：[TOP50用Ruby on Rails开发的网站](http://developer.51cto.com/art/200904/121203_all.htm)
+  现在有的网站因为访问量过大出现性能问题，已经开始逐步迁移到其他技术架构，但从学习角度 Rails 仍是最快入门的选择。
+  参考阅读 [技术栈的选择](http://www.csdn.net/article/2013-12-30/2817970-technology-stack-choices)
 
 * 应该怎样学习 Rails ？
         
