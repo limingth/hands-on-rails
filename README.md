@@ -13,11 +13,11 @@
   - Ruby 编程练习
   - 课后大作业
 
-* [Lesson 2 - Web 开发流程](3-web-dev-basic.md)
+* [Lesson 2 - Web 开发流程](2-web-dev-basic.md)
   - Git & GitHub
   - 网站部署 Heroku 
 
-* Lesson 3 - 项目1：UserHub 开发
+* [Lesson 3 - 项目1：UserHub 开发](3-userhub-dev.md)
   - 表单基础 Form 
   - 数据库基础 PostgreSQL
   - MVC 设计模式 Model-View-Controller
