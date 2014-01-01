@@ -1,4 +1,3 @@
-
 ## 项目1 UserHub 
 
 
@@ -11,3 +10,5 @@
 
 ### MVC 设计模式
 [视频学习](https://www.codeschool.com/code_tv/intro-to-mvc)
+
+[Happycasts: Rails 入门系列视频](http://ruby-china.org/topics/8456)
