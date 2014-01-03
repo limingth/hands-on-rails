@@ -21,13 +21,15 @@
   - 表单基础 Form 
   - 数据库基础 PostgreSQL
   - MVC 设计模式 Model-View-Controller
+  - 邮件发送 gmail_sender
 
-* Lesson 4 - 项目2：类 Wiki 博客网站开发
+* [Lesson 4 - 项目2：类 Wiki 博客网站开发](4-wiki-dev.md)
   - 路由概念 Route 
   - 页面布局 Layout 
   - 风格化 Bootstrap Styling
+  - 搜索功能 Searching
   
-* Lesson 5 - 项目3：类 Weibo 微博网站开发
+* [Lesson 5 - 项目3：类 Twitter 微博网站开发](5-twitter-dev.md)
   - 注册和登录 Sign up and Sign in
   - 密码加密和验证 bCrypt and secure password
   - 闪烁消息 flash message 
@@ -35,23 +37,27 @@
 * Lesson 6 
   - 用户验证 User Authentication
   - 会话 Session
+  - 发帖功能 Tweet
 
 * Lesson 7 
   - 关注和取消关注 Follow and UnFollow
-  - 转发 Forward
+  - 转发功能 Forward
 
 * Lesson 8 
-  - 用户头像 gravatar
+  - 用户头像 Gravatar
+  - 评论功能 Review
 
-* Lesson 9 - 项目4：SharedIn 社交网站开发
+* [Lesson 9 - 项目4：SharedIn 社交网站开发](6-sharedin-dev.md)
+  - 敏捷开发 Agile Dev
+  - User Story
+
+* Lesson 10 
   - 邮件发送 Sending Emails
   - 添加标签 Adding Tags
 
-* Lesson 10 
-
-
 * Lesson 11 
-
+  - 在线聊天功能
+  - #tag# 群发消息功能
 
 * Lesson 12 
   - 部署、优化和扩展 Deploying，Optimizing and Scaling Application
