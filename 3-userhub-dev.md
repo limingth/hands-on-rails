@@ -19,3 +19,5 @@
 #### Step 5 - Use MVC to view students info
 #### Step 6 - New and delete students info
 #### Step 7 - Add gmail_sender
+#### Bootstrap styling
+#### Layout application

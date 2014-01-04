@@ -1,6 +1,5 @@
 ## 项目4：SharedIn 社交网站开发
 
-
 ### User Story
 
 ### 1. Design Homepage
@@ -71,6 +70,27 @@
 
     `heroku create sharedin-us`
     `git push heroku master`
+
+
+### 2. Design Profile page
+
+#### 2.1 Create user model
+
+    `rails g resource user firstname lastname email password_digest`
+    `rake db:migrate`
+    `vi Gemfile` (gem 'bcrypt-ruby', '~> 3.1.2')
+    `vi app/models/user.rb`
+
+#### 2.2 Create tag model
+
+    `rails g resource tag`
+
+
+
+
+
+
+
 
 
 

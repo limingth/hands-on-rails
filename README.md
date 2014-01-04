@@ -7,36 +7,40 @@
   - 学习基础自测
   - 开发环境准备
 
-* [Lesson 1 - Ruby 语言基础](1-ruby-basic.md)
+* [Lesson 1 - Ruby 语言基础](1-ruby-basics.md)
   - 什么是 Ruby？
   - 体验一下 Ruby 编程
-  - Ruby 编程练习
-  - 课后大作业
+  - Ruby 编程练习 
+  - 课后大作业: 约瑟夫环
+  - 开源项目: Ruby 网络爬虫项目 rubycrawler
 
-* [Lesson 2 - Web 开发流程](2-web-dev-basic.md)
+* [Lesson 2 - Web 开发流程](2-web-dev-basics.md)
   - Git & GitHub
   - 网站部署 Heroku 
+  - Postgresql 数据库
+  - Html 基础 
+  - 课后大作业: 发布第一个自己的网站 
 
 * [Lesson 3 - 项目1：UserHub 开发](3-userhub-dev.md)
   - 表单基础 Form 
   - 数据库基础 PostgreSQL
   - MVC 设计模式 Model-View-Controller
+  - 风格化 Bootstrap Styling
   - 邮件发送 gmail_sender
 
 * [Lesson 4 - 项目2：类 Wiki 博客网站开发](4-wiki-dev.md)
-  - 路由概念 Route 
+  - 用户注册和登录 Sign up and Sign in
   - 页面布局 Layout 
-  - 风格化 Bootstrap Styling
-  - 搜索功能 Searching
+  - 路由概念 Route 
+  - 用户头像 Gravatar
+  - 会话 Session
   
 * [Lesson 5 - 项目3：类 Twitter 微博网站开发](5-twitter-dev.md)
-  - 注册和登录 Sign up and Sign in
+  - 用户验证 User Authentication
   - 密码加密和验证 bCrypt and secure password
   - 闪烁消息 flash message 
 
 * Lesson 6 
-  - 用户验证 User Authentication
-  - 会话 Session
   - 发帖功能 Tweet
 
 * Lesson 7 
@@ -44,24 +48,24 @@
   - 转发功能 Forward
 
 * Lesson 8 
-  - 用户头像 Gravatar
   - 评论功能 Review
+  - 搜索功能 Searching
 
 * [Lesson 9 - 项目4：SharedIn 社交网站开发](6-sharedin-dev.md)
   - 敏捷开发 Agile Dev
-  - User Story
+  - [User Story](http://www.mountaingoatsoftware.com/agile/user-stories)
 
 * Lesson 10 
-  - 邮件发送 Sending Emails
-  - 添加标签 Adding Tags
+  - 用户权限验证系统 Device
+  - 邮件发送 [Action Mailer Basics](http://guides.rubyonrails.org/action_mailer_basics.html)
 
 * Lesson 11 
-  - 在线聊天功能
+  - 添加标签 Adding Tags
+  - 在线聊天功能 Chatroom
   - #tag# 群发消息功能
 
 * Lesson 12 
   - 部署、优化和扩展 Deploying，Optimizing and Scaling Application
-  - [User Story](http://www.mountaingoatsoftware.com/agile/user-stories)
   - [example](https://www.pivotaltracker.com/s/projects/646869)
 
 

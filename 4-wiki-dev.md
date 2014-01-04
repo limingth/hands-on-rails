@@ -15,8 +15,9 @@
 #### Create the Wikiful Landing Page
 #### Database seed data
 #### Model-View-Controller interactive 
-#### Layout application
-#### Bootstrap styling
+
+[Sign up and password](http://www.youtube.com/watch?v=bOdn9EdUquo&feature=youtu.be)
+
 #### Searching 
 
 
