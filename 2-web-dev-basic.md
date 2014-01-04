@@ -57,7 +57,15 @@ HeroKu ，不读 Hero-Ku, 读作 Her-oh-koo ！
 
 * 学习了解更多关于 Heroku  [Getting Started with Heroku](https://devcenter.heroku.com/articles/quickstart) 
 
-#### 课后大作业
+* 提前了解 Heroku 不支持 SQLite3 [SQLite on Heroku](https://devcenter.heroku.com/articles/sqlite3)
+
+### Postgresql 数据库
+
+#### 安装 Postgresql
+
+* 本地安装和测试 psql (https://github.com/limingth/myRoR/blob/master/2-work-with-psql.md)
+
+### 课后大作业
 将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。
 
 * 动手实践 [Host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
