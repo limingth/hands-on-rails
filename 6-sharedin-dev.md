@@ -29,6 +29,9 @@
 
     `vi app/views/layouts/application.html.erb`
 
+* https://www.linkedin.com
+    `cp index.html app/view/welcome/index.html.erb`
+
 * puts top-padding on the body element
     
     `vi app/assets/stylesheets/bootstrap_and_overrides.css.less`
