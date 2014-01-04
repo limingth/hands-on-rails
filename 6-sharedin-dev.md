@@ -27,10 +27,16 @@
 
 * add navbar layout
 
-* puts top-padding on the body element
+    `vi app/views/layouts/application.html.erb`
 
-* add left sidebar layout 
+* puts top-padding on the body element
+    
+    `vi app/assets/stylesheets/bootstrap_and_overrides.css.less`
+
+* add left sidebar layout  
 
 * add welcome message
 
 * add bottom bar layout 
+
+
