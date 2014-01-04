@@ -52,8 +52,8 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 
 一个不完全确切但形象的比喻，Heroku就是一个使用Ruby的GAE - [Google App Engine](http://zh.wikipedia.org/zh/Google_App_Engine)。
 
-#### Heroku怎么读？
-HeroKu ，不读 Hero-Ku, 读作 Her-oh-koo ！
+* Heroku 怎么读？
+	- HeroKu ，不读 Hero-Ku, 读作 Her-oh-koo ！
 
 * 学习了解更多关于 Heroku  [Getting Started with Heroku](https://devcenter.heroku.com/articles/quickstart) 
 
