@@ -77,6 +77,12 @@
 #### 2.1 Devise 
 [Adding Authentication with Devise](http://guides.railsgirls.com/devise/)
 
+* Video
+
+[Introducing Devise](http://railscasts.com/episodes/209-introducing-devise?autoplay=true)
+
+[Customizing Devise](http://railscasts.com/episodes/210-customizing-devise?autoplay=true)
+
     `vi Gemfile` (gem 'devise', '1.1.rc0') 
     `bundle install`
     `rails generate devise_install`
@@ -95,6 +101,7 @@
 
     `rails g controller home`
 
+    `rails g devise_views`
 
 
 

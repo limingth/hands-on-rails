@@ -47,6 +47,8 @@
 #### Ruby 参考教材
 [Ruby tutorial](http://www.tutorialspoint.com/ruby)
 
+* diff 命令比较文件差别
+
 ### 课后大作业
 * 约瑟夫环问题  
 已知n个人（以编号1，2，3...n分别表示）围坐在一张圆桌周围。
