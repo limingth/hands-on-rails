@@ -74,14 +74,36 @@
 
 ### 2. Design Profile page
 
-#### 2.1 Create user model
+#### 2.1 Devise 
+[Adding Authentication with Devise](http://guides.railsgirls.com/devise/)
+
+    `vi Gemfile` (gem 'devise', '1.1.rc0') 
+    `bundle install`
+    `rails generate devise_install`
+    `vi config/initializers/devise.rb` (config.action_mailer.default_url_options = { :host => 'localhost:3000' }  )
+    
+
+#### 2.2 Create user model
+
+    `rails generate devise User`
+    `dropdb my_db_development`
+    `dropdb my_db_test`
+    `rake db:create`
+    `rake db:migrate`
+
+#### 2.3 Create home page
+
+    `rails g controller home`
+
+
+
 
     `rails g resource user firstname lastname email password_digest`
     `rake db:migrate`
     `vi Gemfile` (gem 'bcrypt-ruby', '~> 3.1.2')
     `vi app/models/user.rb`
 
-#### 2.2 Create tag model
+#### 2.3 Create tag model
 
     `rails g resource tag`
 

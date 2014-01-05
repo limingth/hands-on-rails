@@ -29,15 +29,15 @@
   - 邮件发送 gmail_sender
 
 * [Lesson 4 - 项目2：类 Wiki 博客网站开发](4-wiki-dev.md)
-  - 用户注册和登录 Sign up and Sign in
+  - 用户模型 User Model
   - 页面布局 Layout 
   - 路由概念 Route 
   - 用户头像 Gravatar
-  - 会话 Session
+  - 登录/退出/会话 Sign in/out and Session
   
 * [Lesson 5 - 项目3：类 Twitter 微博网站开发](5-twitter-dev.md)
   - 用户验证 User Authentication
-  - 密码加密和验证 bCrypt and secure password
+  - 密码加密和验证 bCrypt and has_secure_password
   - 闪烁消息 flash message 
 
 * Lesson 6 

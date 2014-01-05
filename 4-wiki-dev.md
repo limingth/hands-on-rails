@@ -3,11 +3,16 @@
 
 ### 项目预备知识
 
-#### Seed 概念
+#### User Model 用户模型 
+[参考阅读](http://railstutorial-china.org/chapter6.html)
+
+* Seed 概念
 
 #### Layout 布局
 
-#### Searching 搜索
+#### Route 路由 
+
+#### Gravatar 用户头像 
 
 
 ### 类 Wiki 项目开发流程
