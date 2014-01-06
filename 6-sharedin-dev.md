@@ -64,13 +64,16 @@
 
 * create db 
 
-    `rake db:create`
+    `heroku rake db:create`
 
 * name site as sharedin-us
 
     `heroku create sharedin-us`
     `git push heroku master`
 
+* drop db
+
+    `heroku pg:reset DATABASE`
 
 ### 2. Design Profile page
 
@@ -94,28 +97,47 @@
     `rails generate devise User`
     `dropdb my_db_development`
     `dropdb my_db_test`
+    `rails generate migration AddFirstnameToUsers firstname:string`
+    `rails generate migration AddLastnameToUsers lastname:string`
     `rake db:create`
     `rake db:migrate`
 
-#### 2.3 Create home page
+    `rails g migration AddNameToTags name:string`
+    `rails g migration AddUser_idToTags user_id:integer`
+    `rake db:migrate`
+
+[Add firstname and lastname to User](https://github.com/plataformatec/devise#strong-parameters)
+
+#### 2.3 Implement sign-up page
+
+* /home/index
 
     `rails g controller home`
 
     `rails g devise_views`
 
-
+    `heroku run rake db:migrate`
 
     `rails g resource user firstname lastname email password_digest`
+
     `rake db:migrate`
+
     `vi Gemfile` (gem 'bcrypt-ruby', '~> 3.1.2')
+
     `vi app/models/user.rb`
 
-#### 2.3 Create tag model
+
+#### 2.4 Implement sign-in page
+
+* /welcome/index
+
+* "_left_sidebar.html.erb"
+
+* "_user_list.html.erb"
+
+#### 2.4 Create tag model
 
     `rails g resource tag`
-
-
-
 
 
 
