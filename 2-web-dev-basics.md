@@ -69,8 +69,12 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 * 本地安装和测试 psql [work with psql](https://github.com/limingth/myRoR/blob/master/2-work-with-psql.md)
 
 ### Html 基础
-
 * [html 单页面施工七日记](http://haoqicat.com/happypeter/html7)
+
+#### bootstrap
+* [bootcss](http://www.bootcss.com/)
+* [bootstrap on github repo](https://github.com/twbs/bootstrap)
+* [wrapbootstrap](http://wrapbootstrap.com/)
 
 ### 课后大作业
 将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。
