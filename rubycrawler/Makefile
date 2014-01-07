@@ -10,3 +10,5 @@ test:
 clean:
 	rm *.dat
 
+list:
+	cat *_email.dat | awk '{ print $$1 }'
