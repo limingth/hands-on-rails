@@ -81,5 +81,7 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 
 * 动手实践 [Host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
 
-* 参考资料 [Heroku Dev Center](https://devcenter.heroku.com/)
+* 参考资料  
+    - [Heroku Dev Center](https://devcenter.heroku.com/)
+    - [hello world on bootstrap](http://v3.bootcss.com/getting-started/)
 
