@@ -23,11 +23,18 @@ dprint "My email crawler v1.0"
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # change your url here, that's all, leave the rest to us
 #$url = "http://www.itpub.net/thread-1206888-1-1.html"
-$url = "http://www.itpub.net/list.html"
+#$url = "http://www.itpub.net/list.html"
+$url = "http://bbs.66xue.com/thread-308345-2-1.html"
 #$url = "http://ruby-china.org/topics"
 #$url = "https://github.com/limingth"
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 $current_url = $url
+
+if ARGV[0].to_s != ''
+  $url = ARGV[0]
+end
+puts $url
+sleep 1
 
 def regular_url
 
@@ -159,16 +166,11 @@ class Util
 		else
 			return nil
 		end
-		dprint url
+		dprint "href found: " + url
 
 		if Util.exclude(url) == nil
 			dprint "css, js, pdf, jpg -> no push"
 			return nil
-		end
-
-		if url[0, 4] == 'http'
-			#return url		
-			return nil	# we just search in this site
 		end
 
 		if url[0, 6] == 'mailto'
@@ -177,6 +179,12 @@ class Util
 
 		if url[0, 10] == 'javascript'
 			return nil
+		end
+
+		if url[0, $url_root.length] == $url_root
+			return url	# this url is in this same site	
+		else
+			return nil	# forget it, just search in this site
 		end
 
 		if url[0, 1] == '/'
@@ -319,6 +327,7 @@ end
 begin
   puts "Press ctrl-C when you get bored"
   mainloop
+  Util.savestack
 rescue Interrupt => e
   puts "Note: all links crawled and to be crawled are saved"
   Util.savestack
