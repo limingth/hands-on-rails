@@ -75,13 +75,15 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 * [bootcss](http://www.bootcss.com/)
 * [bootstrap on github repo](https://github.com/twbs/bootstrap)
 * [wrapbootstrap](http://wrapbootstrap.com/)
+* [hello world on bootstrap](http://v3.bootcss.com/getting-started/)
 
 ### 课后大作业
 将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。
+页面源码可以参考 [Jumbotron](http://getbootstrap.com/examples/jumbotron/)
 
 * 动手实践 [Host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
 
 * 参考资料  
     - [Heroku Dev Center](https://devcenter.heroku.com/)
-    - [hello world on bootstrap](http://v3.bootcss.com/getting-started/)
+
 
