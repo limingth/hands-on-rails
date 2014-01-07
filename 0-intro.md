@@ -50,6 +50,10 @@
 * 数据结构基本概念
   - 栈和队列
   - 动态数组和哈希表
+* Linux 命令行使用
+  - cd/ls/cp/mv/rm/mkdir/rmdir/find/grep/which
+  - ~/.bashrc/.vimrc/$PATH路径/>/>>重定向/|管道
+  - 参考阅读 <http://conqueringthecommandline.com/book>
 
 ### 开发环境准备
 * 项目代码版本管理工具

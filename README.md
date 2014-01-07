@@ -19,6 +19,7 @@
   - 网站部署 Heroku 
   - Postgresql 数据库
   - Html 基础 
+  - Bootstrap 开源页面框架
   - 课后大作业: 发布第一个自己的网站 
 
 * [Lesson 3 - 项目1：UserHub 开发](3-userhub-dev.md)
