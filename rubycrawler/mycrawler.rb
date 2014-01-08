@@ -9,8 +9,8 @@ require 'thread'
 # comment this line for no debug info
 #$debug = true
 
-# count for email number
-$count = 0
+# counter for email number
+$email_counter = 0
 
 def dprint msg
 	if $debug == true 
@@ -33,22 +33,20 @@ $current_url = $url
 if ARGV[0].to_s != ''
   $url = ARGV[0]
 end
-puts $url
+puts "Get url to crawl: <" + $url.to_s + ">"
 sleep 1
 
 def regular_url
+	# these value are just for test, see real value of $url at code beginning
+	# $url = "http://www.itpub.net/test/subdir/thread-1206888-1-1.html"
+	# $url = "http://www.itpub.net/"
+	# $url = "http://www.itpub.net"
 
-# these value are just for test, see real value of $url at code beginning
-# $url = "http://www.itpub.net/test/subdir/thread-1206888-1-1.html"
-# $url = "http://www.itpub.net/"
-# $url = "http://www.itpub.net"
-
-# $url could be any url you want to paste here like http://www.abc.com/test/dir/index.html
-# $url_root must be a url like http://www.abc.com
-# $url_dir must be a url like http://www.abc.com/test/dir/
-# $url_file must be the last file name like index.html
-
-	puts $url
+	# $url could be any url you want to paste here like http://www.abc.com/test/dir/index.html
+	# $url_root must be a url like http://www.abc.com
+	# $url_dir must be a url like http://www.abc.com/test/dir/
+	# $url_file must be the last file name like index.html
+	dprint $url
 
 	$url_root = $url.match(/https?:\/\/[^\/]*/).to_s
 	puts "url root is " + $url_root
@@ -66,43 +64,34 @@ def regular_url
 	end
 	puts "url file is " + $url_file
 
-	puts $url
+	dprint $url
 	#exit
 end
-
-#$url = "http://www.itpub.net"
-#$url = "http://www.akaedu.us"	# http:// is necessary for open()
-#$url = "http://www.innocamp.net"	# http:// is necessary for open()
-#$url = "http://www.akaedu.org"	# http:// is necessary for open()
-#$url = "http://www.mitbbs.com"	# http:// is necessary for open()
-#$url = "http://www.wenxuecity.com"	# http:// is necessary for open()
-#$url = "http://bbs.wenxuecity.com"
-#$url = "http://sfbay.craigslist.org"
-#$url = "http://www.pku.edu.cn"
-#$url = "http://www.sofang.com"
-#$url = "http://bbs.wenxuecity.com"
-
 
 regular_url()
 
 $url_name = $url_root.gsub(/https?:\/\//, '')
-puts $url_name
-t = Time.now
-#$time = t.strftime "%Y-%m-%d_%H:%M:%S"  => "2012-11-10 17:16:12"
-$time = t.utc.to_s
+dprint $url_name
 
-$email_file = $time + "_" + $url_name + "_email.dat"
-$links_file = $time + "_" + $url_name + "_links.dat"	# save all links crawled
-$tasks_file = $time + "_" + $url_name + "_tasks.dat"	# save all links to be crawled
-$error_file = $time + "_" + $url_name + "_error.dat"	# save all error links 
+t = Time.now
+$time = t.utc.to_s
+$time = t.localtime
+$time = t.strftime "%Y-%m-%d_%H:%M:%S"  	# => "2012-11-10 17:16:12"
+puts $time
+
+$url_time_file = $url_name.to_s + "_" + $time.to_s + ".dat"
+$url_time_file = $url_time_file.to_s
+puts $url_time_file
+
+$email_file = "emails_" + $url_time_file	# save all emails crawled
+$links_file = "links_" + $url_time_file		# save all links crawled
+$tasks_file = "tasks_" + $url_time_file		# save all links to be crawled
+$error_file = "errors_" + $url_time_file		# save all error links 
 
 puts $email_file
 puts $links_file
-
-$max_depth = 10 
-$max_pages = 100000
-
-$thread_num = 10
+puts $tasks_file
+puts $error_file
 
 $email_regex = /(?:"([^@]*)"\s.\b(?:mailto:)*)*([\w._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4})\b./i
 $emails = []
@@ -253,8 +242,8 @@ class Crawl
 
 			if match != nil && !$emails.include?(match)
 				$emails.push match
-				$count += 1
-				puts "+ add email #{$count}: " + match
+				$email_counter += 1
+				puts "+ add email #{$email_counter}: " + match
 				Util.write($email_file, match, @url)
 			end
 		end
@@ -262,9 +251,6 @@ class Crawl
 	
 	def get_links
 		$links_inpage = 0
-		if ($links_crawled.length+$links_stack.length) > $max_pages
-			return
-		end
 
 		@html.scan($link_regex) do |match|
 			dprint "find link: " + match
@@ -296,63 +282,47 @@ class Crawl
 
 end
 
+def test
+	@dep = 1
+	@url = $url
 
-def mainloop
-	# push the root url to links_stack
-	$links_stack.push [0, $url]
+# add 1 level from current one to expand
+	puts "  try open " + @url.to_s
+	c = Crawl.new(@url, @dep+1)
+	puts "  open and read ok"
 
-	# while stack is not empty
-	while $links_stack.length != 0
-		dprint 'links stack ->'+String($links_stack.length)
-		dprint 'links crawled ->'+String($links_crawled.length)
+	# first we search emails and push this @url to $links_crawled
+	c.get_emails	
 
-		# get the item at the head of queue
-		# That's called breadth-first-search  
-		puts "\n--- #{$popcnt} pages crawling...#{$links_stack.length} links left, #{$count} emails found, #{$open_err} url error!"
-		link = $links_stack.shift
-		@dep = link[0]
-		@url = link[1]
-		$current_url = @url
+	# add to links crawled stack
+	$crawled_pushcnt += 1
+	$links_crawled.push @url
+	#puts "^ push crawled " + $crawled_pushcnt.to_s + " " + @url
+	dprint $links_crawled
 
-		$popcnt = $popcnt + 1
-		#puts "@ pop " + $popcnt.to_s + " " + $dep.to_s + " " + @url.to_s 
-
-		# if current link[0] level reach to max depth, then break
-		if @dep == $max_depth + 1 
-			break
-		end
-
-		# add 1 level from current one to expand
-		puts "  try open " + @url
-		c = Crawl.new(@url, @dep+1)
-		puts "  open and read ok"
-
-		# first we search emails and push this @url to $links_crawled
-		c.get_emails	
-
-		# add to links crawled stack
-		$crawled_pushcnt += 1
-		$links_crawled.push @url
-		#puts "^ push crawled " + $crawled_pushcnt.to_s + " " + @url
-		dprint $links_crawled
-
-		# then we try to get links from this @url
-		c.get_links
-
-		puts "  #{$links_inpage} links pushed to stack\n"
-	end
+	# then we try to get links from this @url
+	c.get_links
+	puts "  #{$links_inpage} links pushed to stack\n"
 
 	puts "see all emails in " + $email_file
 	puts "see all links in " + $links_file
+	Util.savestack
+
+	while $links_stack.length != 0
+		$popcnt = $popcnt + 1
+		puts "\n--- #{$popcnt} pages crawling...#{$links_stack.length} links left, #{$email_count} emails found, #{$open_err} url error!"
+
+		link = $links_stack.shift
+		@dep = link[0]
+		@url = link[1]
+	end
 
 end
 
 begin
   puts "Press ctrl-C when you get bored"
-  mainloop
-  Util.savestack
+  test
 rescue Interrupt => e
   puts "Note: all links crawled and to be crawled are saved"
-  Util.savestack
 end
 
