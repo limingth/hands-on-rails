@@ -87,7 +87,9 @@ regular_url()
 
 $url_name = $url_root.gsub(/https?:\/\//, '')
 puts $url_name
+#t = Time.now.in_time_zone("America/Los_Angeles")
 t = Time.now
+
 #$time = t.strftime "%Y-%m-%d_%H:%M:%S"  => "2012-11-10 17:16:12"
 $time = t.utc.to_s
 
@@ -128,13 +130,6 @@ class Util
 	end
 
 	def Util.savestack
-		file = File.new($links_file, 'a')
-		while $links_crawled.length != 0
-			@url = $links_crawled.shift
-			file << @url + "\r\n"
-		end
-		file.close()
-
 		file = File.new($tasks_file, 'a')
 		while $links_stack.length != 0
 			link = $links_stack.shift
@@ -229,6 +224,7 @@ class Crawl
 		begin
 			dprint "open url: " + @url
 			@html = open(@url).read
+			#$html.to_s.force_encoding("utf-8").encode("utf-8", replace: nil)
 			dprint "html: " + @html.to_s
 		end
 			dprint "html: " + @html.to_s
@@ -319,14 +315,14 @@ def mainloop
 
 			# get the item at the head of queue
 			# That's called breadth-first-search  
+			#puts "@ pop " + $popcnt.to_s + " " + $dep.to_s + " " + @url.to_s 
+			$popcnt = $popcnt + 1
+
 			puts "\n--- #{$popcnt} pages crawling...#{$links_stack.length} links left, #{$count} emails found, #{$open_err} url error!"
 			link = $links_stack.shift
 			@dep = link[0]
 			@url = link[1]
 			$current_url = @url
-
-			$popcnt = $popcnt + 1
-			#puts "@ pop " + $popcnt.to_s + " " + $dep.to_s + " " + @url.to_s 
 
 			# if current link[0] level reach to max depth, then break
 			if @dep == $max_depth + 1 
@@ -338,6 +334,7 @@ def mainloop
 			c = Crawl.new(@url, @dep+1)
 			puts "  open and read ok"
 
+		begin
 			# first we search emails and push this @url to $links_crawled
 			c.get_emails	
 
@@ -349,8 +346,16 @@ def mainloop
 
 			# then we try to get links from this @url
 			c.get_links
-
 			puts "  #{$links_inpage} links pushed to stack\n"
+		rescue
+			puts "there is a scan error in #{@url}"
+		end
+
+			# save the current @url to links.dat
+			file = File.new($links_file, 'a')
+			file << @url + "\r\n"
+			file.close()
+
 		}
 		}
 	}
