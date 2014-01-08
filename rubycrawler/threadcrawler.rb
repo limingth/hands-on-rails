@@ -94,6 +94,7 @@ $time = t.utc.to_s
 $email_file = $time + "_" + $url_name + "_email.dat"
 $links_file = $time + "_" + $url_name + "_links.dat"	# save all links crawled
 $tasks_file = $time + "_" + $url_name + "_tasks.dat"	# save all links to be crawled
+$error_file = $time + "_" + $url_name + "_error.dat"	# save all error links 
 
 puts $email_file
 puts $links_file
@@ -101,7 +102,7 @@ puts $links_file
 $max_depth = 10 
 $max_pages = 100000
 
-$thread_num = 100
+$thread_num = 10
 
 $email_regex = /(?:"([^@]*)"\s.\b(?:mailto:)*)*([\w._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4})\b./i
 $emails = []
@@ -119,9 +120,10 @@ $open_err = 0
 $links_inpage = 0
 
 class Util
-	def Util.write fname, msg
+
+	def Util.write fname, msg, myurl
 		file = File.new(fname, 'a')
-		file << msg + " # from " + $current_url + "\r\n"
+		file << msg + " # from " + myurl + "\r\n"
 		file.close()
 	end
 
@@ -156,46 +158,64 @@ class Util
         end
 
 	def Util.format_url url, f_url
-		dprint url
+
+		# first cut off \n if there is 
+		url = url.chomp("\n")
+		#dprint url
+
 		if url.include?('#')
 			return nil
 		end
 
-		if url[0, 5] == 'href='
-			url = url[6, url.length-7]
-		else
+		if url[0, 5] != 'href='
 			return nil
 		end
-		dprint "href found: " + url
 
+		# get the url_string from href=url_string
+		url = url[6, url.length-7]
+		dprint "real url found: " + url
+
+		# get rid of all invalid url
+		# http://xxx.com/a.pdf
 		if Util.exclude(url) == nil
 			dprint "css, js, pdf, jpg -> no push"
 			return nil
 		end
 
+		# mailto:abc@xxx.com
 		if url[0, 6] == 'mailto'
 			return nil
 		end
 
+		# javascript(0)
 		if url[0, 10] == 'javascript'
 			return nil
 		end
 
+		# http://xxx.com as http://xxx.com/new/dir/newlink
 		if url[0, $url_root.length] == $url_root
 			return url	# this url is in this same site	
-		else
-			return nil	# forget it, just search in this site
 		end
 
+		#  http://cache.baiducontent.com/
+		if url[0, 30] == "http://cache.baiducontent.com/"
+			return url
+		end
+
+		# out-site url, then just drop it
+		if url[0, 4] == 'http'
+			return nil
+		end
+
+		# in-site url with '/', then add $url_root as prefix
 		if url[0, 1] == '/'
 			url = $url_root + url
-		else
-			url = $url_dir + url
+			return url
 		end
-		dprint url
 
-		url = url.chomp("\n")
-		url = url.chomp("/")
+		# in-site url without '/', then add $url_dir as prefix
+		url = $url_dir + url
+		dprint url
 		return url
 	end
 end
@@ -220,6 +240,9 @@ class Crawl
 			rescue
 			puts "  opened error #{$open_err} times"
 			$open_err += 1
+			file = File.new($error_file, 'a')
+			file << "open error: " + @url + "\r\n"
+			file.close()
 			@html = ''
 	end
 
@@ -232,7 +255,7 @@ class Crawl
 				$emails.push match
 				$count += 1
 				puts "+ add email #{$count}: " + match
-				Util.write($email_file, match)
+				Util.write($email_file, match, @url)
 			end
 		end
 	end
