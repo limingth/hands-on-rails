@@ -65,11 +65,15 @@
 * 技术常见问题解答和社区
   - [stackoverflow.com](stackoverflow.com) 帐号注册  
 
-* ruby 环境本地搭建 （难度****）
+* Ruby on Mac 环境搭建 （难度****）
   - [Mac 安装流程](https://github.com/limingth/myRoR/blob/master/0-how-to-install.md)
-
+  
 * sublime text 2 编辑工具  
   - [下载安装 sublime](http://www.sublimetext.com/2)
+
+* Ruby on Windows 环境搭建
+  - [Windows RubyInstaller](http://rubyinstaller.org/downloads/)
+  - [Git for Windows](http://rubyinstaller.org/downloads/)
 
 完成上述工作后，你有两种方法写所有程序：
 
