@@ -2,7 +2,12 @@
 
 script_dir = File.dirname(__FILE__)
 $LOAD_PATH.unshift script_dir
+
+$url = "http://bbs.66xue.com/thread-308345-2-1.html"
 require 'mycrawler.rb'
+
+$max_depth = 10
+$max_pages = 100000
 
 def mainloop
 	# push the root url to links_stack
@@ -13,18 +18,19 @@ def mainloop
 		dprint 'links stack ->'+String($links_stack.length)
 		dprint 'links crawled ->'+String($links_crawled.length)
 
+		# begin to pop links from links_stack
+		$popcnt = $popcnt + 1
+		dprint "@ pop " + $popcnt.to_s + " " + $dep.to_s + " " + @url.to_s 
+		puts "\n--- #{$popcnt} pages crawling...#{$links_stack.length} links left, #{$email_counter} emails found, #{$open_err} url error!"
+
 		# get the item at the head of queue
 		# That's called breadth-first-search  
-		puts "\n--- #{$popcnt} pages crawling...#{$links_stack.length} links left, #{$count} emails found, #{$open_err} url error!"
 		link = $links_stack.shift
 		@dep = link[0]
 		@url = link[1]
 		$current_url = @url
 
-		$popcnt = $popcnt + 1
-		#puts "@ pop " + $popcnt.to_s + " " + $dep.to_s + " " + @url.to_s 
-
-		# if current link[0] level reach to max depth, then break
+		# if current link[0] level reach to max_depth, then break
 		if @dep == $max_depth + 1 
 			break
 		end
@@ -44,8 +50,11 @@ def mainloop
 		dprint $links_crawled
 
 		# then we try to get links from this @url
-		c.get_links
-
+		# if current pages reach to max_pages, then don't get links any more
+		$links_inpage = 0
+		if ($links_crawled.length+$links_stack.length) < $max_pages
+			c.get_links
+		end
 		puts "  #{$links_inpage} links pushed to stack\n"
 	end
 

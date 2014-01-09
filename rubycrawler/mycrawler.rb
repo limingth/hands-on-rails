@@ -24,9 +24,12 @@ dprint "My email crawler v1.0"
 # change your url here, that's all, leave the rest to us
 #$url = "http://www.itpub.net/thread-1206888-1-1.html"
 #$url = "http://www.itpub.net/list.html"
-$url = "http://bbs.66xue.com/thread-308345-2-1.html"
+#$url = "http://bbs.66xue.com/thread-308345-2-1.html"
 #$url = "http://ruby-china.org/topics"
 #$url = "https://github.com/limingth"
+if $url == nil
+	$url = "http://innocamp.net"
+end
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 $current_url = $url
 
@@ -76,7 +79,7 @@ dprint $url_name
 t = Time.now
 $time = t.utc.to_s
 $time = t.localtime
-$time = t.strftime "%Y-%m-%d_%H:%M:%S"  	# => "2012-11-10 17:16:12"
+$time = t.strftime "%Y-%m-%d_%H.%M.%S"  	# => "2012-11-10 17:16:12"
 puts $time
 
 $url_time_file = $url_name.to_s + "_" + $time.to_s + ".dat"
@@ -250,7 +253,6 @@ class Crawl
 	end
 	
 	def get_links
-		$links_inpage = 0
 
 		@html.scan($link_regex) do |match|
 			dprint "find link: " + match
@@ -301,6 +303,7 @@ def test
 	dprint $links_crawled
 
 	# then we try to get links from this @url
+	$links_inpage = 0
 	c.get_links
 	puts "  #{$links_inpage} links pushed to stack\n"
 
@@ -319,10 +322,6 @@ def test
 
 end
 
-begin
-  puts "Press ctrl-C when you get bored"
-  test
-rescue Interrupt => e
-  puts "Note: all links crawled and to be crawled are saved"
-end
-
+test
+puts "#{$url} crawled at #{$time} with #{$email_counter} emails found!"
+puts "Game Over"
