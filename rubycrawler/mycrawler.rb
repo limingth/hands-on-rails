@@ -222,63 +222,69 @@ class Crawl
 			dprint "open url: " + @url
 			@html = open(@url).read
 			dprint "html: " + @html.to_s
-		end
-			dprint "html: " + @html.to_s
 			if @html.to_s == ''
 				dprint "ERROR in open " + @url
 			else
 				dprint "OK in open " + @url
 			end
-			rescue
-			puts "  opened error #{$open_err} times"
+		rescue
 			$open_err += 1
+			puts "  opened error #{$open_err} times"
 			file = File.new($error_file, 'a')
 			file << "open error: " + @url + "\r\n"
 			file.close()
 			@html = ''
+		end
 	end
 
 	def get_emails
-		@html.scan($email_regex) do |matchs|
-			match = matchs[1]
-			dprint "find email: " + match
+		begin
+			@html.scan($email_regex) do |matchs|
+				match = matchs[1]
+				dprint "find email: " + match
 
-			if match != nil && !$emails.include?(match)
-				$emails.push match
-				$email_counter += 1
-				puts "+ add email #{$email_counter}: " + match
-				Util.write($email_file, match, @url)
+				if match != nil && !$emails.include?(match)
+					$emails.push match
+					$email_counter += 1
+					puts "+ add email #{$email_counter}: " + match
+					Util.write($email_file, match, @url)
+				end
 			end
+	#	rescue
+			puts "scan #{@url} error"
 		end
 	end
 	
 	def get_links
+		begin 
+			@html.scan($link_regex) do |match|
+				dprint "find link: " + match
 
-		@html.scan($link_regex) do |match|
-			dprint "find link: " + match
+				u = Util.format_url(match, @url)
+				dprint "format url: " + u.to_s
 
-			u = Util.format_url(match, @url)
-			dprint "format url: " + u.to_s
+				if u != nil 
+					#puts "\n-> find url: " + u
+					dprint $links_crawled
 
-			if u != nil 
-				#puts "\n-> find url: " + u
-				dprint $links_crawled
+					if $links_stack.rassoc(u)
+						#puts "x already in links_stack"
+						next
+					end
 
-				if $links_stack.rassoc(u)
-					#puts "x already in links_stack"
-					next
+					if $links_crawled.include?(u)
+						#puts "x has been crawled"
+						next
+					end
+
+					$pushcnt = $pushcnt+ 1
+					$links_inpage += 1
+					#puts "^ push stack " + $pushcnt.to_s + " " + u + " " + @depth.to_s 
+					$links_stack.push [@depth, u]
 				end
-
-				if $links_crawled.include?(u)
-					#puts "x has been crawled"
-					next
-				end
-
-				$pushcnt = $pushcnt+ 1
-				$links_inpage += 1
-				#puts "^ push stack " + $pushcnt.to_s + " " + u + " " + @depth.to_s 
-				$links_stack.push [@depth, u]
 			end
+		rescue
+			puts "scan #{@url} error"
 		end
 	end
 

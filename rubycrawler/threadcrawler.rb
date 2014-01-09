@@ -7,10 +7,10 @@ $url = "http://www.baidu.com/s?ie=utf-8&bs=%E5%87%BA%E5%9B%BD+%E8%B5%84%E6%96%99
 
 require 'mycrawler.rb'
 
-$max_depth = 10
+$max_depth = 3
 $max_pages = 100000
 
-$thread_num = 10
+$thread_num = 5
 
 def mainloop
 	# push the root url to links_stack

@@ -33,7 +33,7 @@ else
 	puts "html: " + $html.to_s
 end
 
-puts $html.encoding.name
+#puts $html.encoding.name
 #$html.to_s.encode("ASCII-8BIT")
 #$html.to_s.encode("utf-8")
 #$html.to_s.force_encoding("ISO-8859-1").encode("utf-8", replace: nil)
@@ -44,9 +44,8 @@ $email_counter = 0
 begin 
 	$html.scan($email_regex) do |matchs|
 		match = matchs[1]
-		#puts "find email: " + match
 		$email_counter += 1
-		puts "+ " + match
+		puts "+ #{$email_counter} " + match
 	end
 	puts "scan finished"
 	rescue
