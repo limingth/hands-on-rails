@@ -8,7 +8,7 @@ test:
 	ruby Crawl.rb 0 10 http://www.akaedu.us/
 
 clean:
-	rm *.dat
+	rm *.txt
 
 list:
-	cat emails*.dat | awk '{ print $$1 }'
+	cat emails*.txt | awk '{ print $$1 }'
