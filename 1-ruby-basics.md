@@ -3,19 +3,21 @@
 本节课程学习时间约1周，建议强化编程练习部分，并独立完成课后大作业。
 
 ### 什么是 Ruby？
-[点击视频观看学习](http://www.lynda.com/home/Player.aspx?lpk4=57937&playChapter=False)
+* [点击视频观看学习](http://www.lynda.com/home/Player.aspx?lpk4=57937&playChapter=False)
 
 ### 体验一下 Ruby 编程
-[在线学习Ruby语言](http://tryruby.org/levels/1/challenges/0)
+* [在线学习Ruby语言](http://tryruby.org/levels/1/challenges/0)
 
 ### Ruby 编程练习
 先学习一下 ivb 的用法，观看视频 
 
-[IRB and Your First Ruby Program](http://teamtreehouse.com/library/ruby-foundations/ruby-basics/irb-and-your-first-ruby-program)
+* [IRB and Your First Ruby Program](http://teamtreehouse.com/library/ruby-foundations/ruby-basics/irb-and-your-first-ruby-program)
 
-[Ruby programming course](http://vimeo.com/21010874)
+* [Ruby programming course](http://vimeo.com/21010874)
 
 完成以下的9个代码练习，可以先抄写三遍，然后自己独立实现一遍。
+
+提示：可以用 diff 命令比较文件差别
 
 * 注释写法  
 <https://github.com/limingth/myRoR/blob/master/NCRoR/1.rb>
@@ -44,10 +46,12 @@
 * 输入输出  
 <https://github.com/limingth/myRoR/blob/master/NCRoR/9.rb>
 
-#### Ruby 参考教材
-[Ruby tutorial](http://www.tutorialspoint.com/ruby)
+* 学习 [Ruby 数组](http://www.ruby-doc.org/core-2.1.0/Array.html) 的知识
 
-* diff 命令比较文件差别
+* 掌握 [Ruby Ranges](http://www.techotopia.com/index.php/Ruby_Ranges) 的用法
+
+#### Ruby 参考教材
+* [Ruby tutorial](http://www.tutorialspoint.com/ruby)
 
 ### 课后大作业
 * 约瑟夫环问题  
