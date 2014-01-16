@@ -11,4 +11,4 @@ clean:
 	rm *.txt
 
 list:
-	cat emails*.txt | awk '{ print $$1 }'
+	cat emails*.dat | awk '{ print $$1 }'
