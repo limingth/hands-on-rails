@@ -59,15 +59,6 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 
 * 提前了解 Heroku 不支持 SQLite3 [SQLite on Heroku](https://devcenter.heroku.com/articles/sqlite3)
 
-### Postgresql 数据库
-
-#### 安装 Postgresql
-* 了解一下关于[Postgresql](http://zh.wikipedia.org/zh/PostgreSQL)
-
-* 更多关于[Postgresql 网站](http://www.postgresql.org/about/)
-
-* 本地安装和测试 psql [work with psql](https://github.com/limingth/myRoR/blob/master/2-work-with-psql.md)
-
 ### Html 基础
 * [html 单页面施工七日记](http://haoqicat.com/happypeter/html7)
 
@@ -77,8 +68,18 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 * [wrapbootstrap](http://wrapbootstrap.com/)
 * [hello world on bootstrap](http://v3.bootcss.com/getting-started/)
 
+### Postgresql 数据库
+
+#### 安装 Postgresql
+* 了解一下关于[Postgresql](http://zh.wikipedia.org/zh/PostgreSQL)
+
+* 更多关于[Postgresql 网站](http://www.postgresql.org/about/)
+
+* 本地安装和测试 psql [work with psql](https://github.com/limingth/myRoR/blob/master/2-work-with-psql.md)
+
 ### 课后大作业
 将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。
+
 页面源码可以参考 [Jumbotron](http://getbootstrap.com/examples/jumbotron/)
 
 * 动手实践 [Host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
