@@ -10,16 +10,16 @@
 * [Lesson 1 - Ruby 语言基础](1-ruby-basics.md)
   - 什么是 Ruby？
   - 体验一下 Ruby 编程
-  - Ruby 编程练习 
+    - Ruby 编程练习 
   - 课后大作业: 约瑟夫环
   - 开源项目: Ruby 网络爬虫项目 rubycrawler
 
 * [Lesson 2 - Web 开发流程](2-web-dev-basics.md)
   - Git & GitHub
   - 网站部署 Heroku 
-  - Postgresql 数据库
   - Html 基础 
-  - Bootstrap 开源页面框架
+    - Bootstrap 开源页面框架
+  - Postgresql 数据库
   - 课后大作业: 发布第一个自己的网站 
 
 * [Lesson 3 - 项目1：UserHub 开发](3-userhub-dev.md)
@@ -27,7 +27,9 @@
   - 数据库基础 PostgreSQL
   - MVC 设计模式 Model-View-Controller
   - 风格化 Bootstrap Styling
-  - 邮件发送 gmail_sender
+  - 闪烁消息 Flash Message
+  - 邮件发送 Sending Email
+  - UserHub 项目开发流程
 
 * [Lesson 4 - 项目2：类 Wiki 博客网站开发](4-wiki-dev.md)
   - 用户模型 User Model
@@ -39,7 +41,6 @@
 * [Lesson 5 - 项目3：类 Twitter 微博网站开发](5-twitter-dev.md)
   - 用户验证 User Authentication
   - 密码加密和验证 bCrypt and has_secure_password
-  - 闪烁消息 flash message 
 
 * Lesson 6 
   - 发帖功能 Tweet
