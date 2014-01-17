@@ -30,7 +30,10 @@
 <http://slashusr.wordpress.com/2012/02/14/enabling-postfix-for-outbound-relay-via-gmail-on-os-x-lion-11/>
 
 ### start
-
-  sudo launchctl load -w /System/Library/LaunchDaemons/org.postfix.master.plist
-  sudo postfix start
-  sudo postfix reload
+  
+    sudo launchctl load -w /System/Library/LaunchDaemons/org.postfix.master.plist
+    sudo postfix start
+    sudo postfix reload
+    sudo postmap /etc/postfix/generic
+    sudo postmap /etc/postfix/sasl/passwd
+    
