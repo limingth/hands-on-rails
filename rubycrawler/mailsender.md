@@ -1,4 +1,3 @@
-
 ## Mail Sender
 
 ### Free online base64 encoder and decoder
@@ -24,3 +23,8 @@
 
 ### ActionMailer 和不同邮箱的问题
 <http://ruby-china.org/topics/8918>
+
+## SMTP on localhost
+
+### Enabling postfix for outbound relay via Gmail on OS X Lion
+<http://slashusr.wordpress.com/2012/02/14/enabling-postfix-for-outbound-relay-via-gmail-on-os-x-lion-11/>
