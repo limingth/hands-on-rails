@@ -1,45 +1,46 @@
 #!/bin/ruby
+
 require 'net/smtp'
 
 # Don't forget to set your env before your run 'ruby mymailer.rb'
-# $ export SMTP_U='yourqq@qq.com'
-# $ export SMTP_P='yourpassword'
-# $ export MAIL_T='Mail Title'
-# $ export MAIL_C='Mail Content'
 
-server = 'smtp.exmail.qq.com'
-port = 465
+# get all configuration from env
+$smtp_serv = ENV['SMTP_SERV']
+$smtp_port = ENV['SMTP_PORT']
+$user_name = ENV['USER_NAME']
+$smtp_user = ENV['SMTP_USER']
+$smtp_pass = ENV['SMTP_PASS']
+$mail_title = ENV['MAIL_T']
+$mail_content = ENV['MAIL_C']
 
-smtp_user = ENV['SMTP_U']
-smtp_pass = ENV['SMTP_P']
-mail_title = ENV['MAIL_T']
-mail_content = ENV['MAIL_C']
+# puts $smtp_serv
+# puts $smtp_port
+# puts $smtp_user
+# puts $smtp_pass
+puts $mail_title
+# puts $mail_content
 
-#puts smtp_user
-#puts smtp_pass
-puts mail_title
-#puts mail_content
+$from = $smtp_user
 
-$from = smtp_user
+$message_from = "From: #{$user_name} <#{$smtp_user}>\n"
+# puts $message_from
 
-#puts message_body
-
-$smtp = Net::SMTP.new(server, port)
-$smtp.enable_ssl
-$smtp.start(server, smtp_user, smtp_pass, :plain)
-
-$message_from = "From: 硅谷训练营 <#{smtp_user}>\n"
-#$message_mime = "MIME-Version: 1.0\nContent-type: text/html\n"
+# $message_mime = "MIME-Version: 1.0\nContent-type: text/html\n"
 $message_mime = ""
-$message_subject = "Subject: #{mail_title}\n"
-$message_content = "#{mail_content}"
+$message_subject = "Subject: #{$mail_title}\n"
+$message_content = "#{$mail_content}"
 
 def mysendmail(to)
 	$message_to = "To: <#{to}>\n"
-	message_body = $message_from + $message_to + $message_mime + $message_subject + $message_content
-	#puts $message_from
-	#puts $message_to
-	$smtp.send_message(message_body, $from, to)
+	# puts $message_to
+
+	body = $message_from + $message_to + $message_mime + $message_subject + $message_content
+	# puts message_body
+
+	smtp = Net::SMTP.new($smtp_serv, 465)
+	smtp.enable_ssl
+	smtp.start($smtp_serv, $smtp_user, $smtp_pass, :plain)
+	smtp.send_message(body, $from, to)
 end
 
 count = 0
@@ -61,8 +62,8 @@ while true
     begin
 	mysendmail to
 	print "ok\n"
+	sleep 11
     rescue
 	print "error\n"
     end
-	sleep 20
 end
