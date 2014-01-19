@@ -37,11 +37,20 @@
 
 *- nnd，这都不知道，你还敢出来"结伙"？赶紧的 [Create a repo](https://help.github.com/articles/create-a-repo)*
 
-### Gist
+#### Gist
 [Gist: Share the history of your writing](http://www.youtube.com/watch?v=EaW_k6jrt2I)
 
-### MarkDown
+#### MarkDown
 [Markdown Basics 101](http://www.youtube.com/watch?v=oba3Czjyras)
+
+### Postgresql 数据库
+
+#### 安装 Postgresql
+* 了解一下关于[Postgresql](http://zh.wikipedia.org/zh/PostgreSQL)
+
+* 更多关于[Postgresql 网站](http://www.postgresql.org/about/)
+
+* 本地安装和测试 psql [work with psql](https://github.com/limingth/myRoR/blob/master/2-work-with-psql.md) （必须完成安装步骤）
 
 ### Heroku 部署网站
 
@@ -68,17 +77,8 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 * [wrapbootstrap](http://wrapbootstrap.com/)
 * [hello world on bootstrap](http://v3.bootcss.com/getting-started/)
 
-### Postgresql 数据库
-
-#### 安装 Postgresql
-* 了解一下关于[Postgresql](http://zh.wikipedia.org/zh/PostgreSQL)
-
-* 更多关于[Postgresql 网站](http://www.postgresql.org/about/)
-
-* 本地安装和测试 psql [work with psql](https://github.com/limingth/myRoR/blob/master/2-work-with-psql.md)
-
 ### 课后大作业
-将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。
+将第一个小节学习的 Rails 网站快速搭建，部署到 Heroku 上，并提交部署完成后的 Internet URL。（约3个小时）
 
 页面源码可以参考 [Jumbotron](http://getbootstrap.com/examples/jumbotron/)
 
