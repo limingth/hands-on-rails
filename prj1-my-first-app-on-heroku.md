@@ -1,7 +1,8 @@
 
 # Prj1 - My First App on Heroku
 
-## step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
+step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
+======================================================
 
 ### New a project
 * rails new my-first-app
@@ -20,7 +21,9 @@
 * vi app/views/welcome/index.html.erb 
 * refer to http://v3.bootcss.com/getting-started/
 
-## step 2: 在 github 上创建了项目代码，可以运行 git clone 下载项目代码
+
+step 2: 在 github 上创建了项目代码，可以运行 git clone 下载项目代码
+======================================================
 
 ### Create a new repo after log in github.com
 * https://github.com/new
@@ -41,21 +44,34 @@
 * git commit -a -m "Add all rails files"
 * git push
 
-## step 3: 本地安装好 heroku，可以运行 heroku 命令
+
+step 3: 本地安装好 heroku，可以运行 heroku login 命令
+======================================================
+
+### Install heroku
+* if heroku not installed, refer to https://toolbelt.heroku.com/
+	- install heroku toolbelt
+
+### Managing Your SSH Keys
+* ssh-keygen -t rsa
+* heroku keys:add
+* refer to https://devcenter.heroku.com/articles/keys
 
 ### Verify heroku command
 * heroku 
 * heroku help
-* if heroku not installed, refer to https://toolbelt.heroku.com/
-	- install heroku toolbelt
 
-## step 4：可以通过 heroku create 产生随机域名和 git push heroku master 完成推送
-
-### heroku create
+### Heroku login
 * heroku login 
 	- Enter your Heroku credentials.
 	- Email: limingth@gmail.com
 	- Password (typing will be hidden): 
+
+
+step 4：可以通过 heroku create 产生随机域名和 git push heroku master 完成推送
+======================================================
+
+### heroku create
 * heroku create
 	- get the link like http://polar-oasis-1107.herokuapp.com/
 	- git config -e if you like it
@@ -84,7 +100,9 @@
 * chrome http://polar-oasis-1107.herokuapp.com
 	- you can see the domain is alive on heroku now 
 
-## step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku create a-new-name 产生新的域名
+
+step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku create a-new-name 产生新的域名
+======================================================
 
 ### Migrate database 
 * heroku run rake db:migrate
