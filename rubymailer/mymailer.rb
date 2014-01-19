@@ -37,7 +37,7 @@ def mysendmail(to)
 	body = $message_from + $message_to + $message_mime + $message_subject + $message_content
 	# puts message_body
 
-	smtp = Net::SMTP.new($smtp_serv, 465)
+	smtp = Net::SMTP.new($smtp_serv, $smtp_port)
 	smtp.enable_ssl
 	smtp.start($smtp_serv, $smtp_user, $smtp_pass, :plain)
 	smtp.send_message(body, $from, to)
@@ -62,7 +62,7 @@ while true
     begin
 	mysendmail to
 	print "ok\n"
-	sleep 11
+	sleep 30
     rescue
 	print "error\n"
     end
