@@ -2,7 +2,7 @@
 # Prj1 - My First App on Heroku
 
 step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
-======================================================
+------------------------------------------------------
 
 ### New a project
 * rails new my-first-app
@@ -23,7 +23,7 @@ step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
 
 
 step 2: 在 github 上创建了项目代码，可以运行 git clone 下载项目代码
-======================================================
+------------------------------------------------------
 
 ### Create a new repo after log in github.com
 * https://github.com/new
@@ -46,7 +46,7 @@ step 2: 在 github 上创建了项目代码，可以运行 git clone 下载项�
 
 
 step 3: 本地安装好 heroku，可以运行 heroku login 命令
-======================================================
+------------------------------------------------------
 
 ### Install heroku
 * if heroku not installed, refer to https://toolbelt.heroku.com/
@@ -69,7 +69,7 @@ step 3: 本地安装好 heroku，可以运行 heroku login 命令
 
 
 step 4：可以通过 heroku create 产生随机域名和 git push heroku master 完成推送
-======================================================
+------------------------------------------------------
 
 ### heroku create
 * heroku create
@@ -102,7 +102,7 @@ step 4：可以通过 heroku create 产生随机域名和 git push heroku master
 
 
 step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku create a-new-name 产生新的域名
-======================================================
+------------------------------------------------------
 
 ### Migrate database 
 * heroku run rake db:migrate
