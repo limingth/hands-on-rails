@@ -84,10 +84,10 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 
 * 动手实践 [Host on heroku](https://github.com/limingth/myRoR/blob/master/7-hosting-on-heroku.md) (****)
     - step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
-    - step 2: 在 github 上创建了项目代码，可以 git clone 
-    - step 3: 本地安装好 heroku
-    - step 4：可以通过 heroku create 和 git push heroku master 完成推送
-    - step 5：可以通过 heroku run rake db:migrate 和 heroku ps 完成启动
+    - step 2: 在 github 上创建了项目代码，可以运行 git clone 下载项目代码
+    - step 3: 本地安装好 heroku，可以运行 heroku 命令
+    - step 4：可以通过 heroku create 和 git push heroku master 完成推送并产生新的域名
+    - step 5：可以通过 heroku run rake db:migrate 和 heroku ps 完成启动并浏览新的域名
 
 * 参考资料  
     - [Heroku Dev Center](https://devcenter.heroku.com/)
