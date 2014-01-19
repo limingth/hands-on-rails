@@ -49,7 +49,7 @@
 * if heroku not installed, refer to https://toolbelt.heroku.com/
 	- install heroku toolbelt
 
-## step 4：可以通过 heroku create 和 git push heroku master 完成推送并产生新的域名
+## step 4：可以通过 heroku create 产生随机域名和 git push heroku master 完成推送
 
 ### heroku create
 * heroku login 
@@ -66,12 +66,13 @@
 
 ### Delete gem 'sqlite3' since heroku doesn't support it and add gem 'pg'
 * vi Gemfile
-	- uncomment #gem 'sqlite3'
-	- add gem 'pg'
+	- comment: #gem 'sqlite3'
+	- add: gem 'pg'
 * bundle install
 
 ### Git push Again
 * git status
+* git add .
 * git commit -a -m "M Gemfile to uncomment gem sqlite3"
 * git push 
 * git push heroku master (AGAIN)
@@ -79,14 +80,28 @@
 	- To git@heroku.com:polar-oasis-1107.git
 	- * [new branch]      master -> master
 
-## step 5：可以通过 heroku run rake db:migrate 和 heroku ps 完成启动并浏览新的域名
-
 ### Verify the new app on heroku is working now
 * chrome http://polar-oasis-1107.herokuapp.com
 	- you can see the domain is alive on heroku now 
 
+## step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku create a-new-name 产生新的域名
+
+### Migrate database 
 * heroku run rake db:migrate
 	- Running `rake db:migrate` attached to terminal... up, run.4921
+
+### Change a good name for your website
+* heroku create first-site-of-limingth
+	- be carefule with the name, only with lowercase letters, numbers, and dashes.
+
+* git config -e
+	- make sure that in [remote "heroku"]
+	- url = git@heroku.com:first-site-of-limingth.git
+	- this shoule be the same with your website name
+
+* git push heroku master 
+	- push it again to heroku.com 
+
 
 
 	
