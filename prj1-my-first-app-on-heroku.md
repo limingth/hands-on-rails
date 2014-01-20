@@ -10,6 +10,7 @@ step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
 
 ### Modify route of root 
 * vi config/routes.rb 
+    - uncomment root route
 * chrome http://localhost:3000/
 
 ### Add welcome controller with index method
