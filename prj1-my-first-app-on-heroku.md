@@ -1,4 +1,3 @@
-
 # Prj1 - My First App on Heroku
 
 step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
@@ -11,6 +10,7 @@ step 1: 本地运行 rails s 可以通过 localhost:3000 浏览页面
 
 ### Modify route of root 
 * vi config/routes.rb 
+    - uncomment root route
 * chrome http://localhost:3000/
 
 ### Add welcome controller with index method
@@ -116,6 +116,9 @@ step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku creat
 	- make sure that in [remote "heroku"]
 	- url = git@heroku.com:first-site-of-limingth.git
 	- this shoule be the same with your website name
+
+* cat .git/config
+	- to confirm that url is right 
 
 * git push heroku master 
 	- push it again to heroku.com 
