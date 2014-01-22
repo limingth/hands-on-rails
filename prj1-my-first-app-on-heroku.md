@@ -127,6 +127,4 @@ step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku creat
 
 ![first app snapshort](first-app-snapshot.png)
 
-
-
 	
