@@ -120,6 +120,10 @@ step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku creat
 * git push heroku master 
 	- push it again to heroku.com 
 
+* http://first-site-of-limingth.herokuapp.com/ alive now!
+
+![first app snapshort](first-app-snapshot.png)
+
 
 
 	
