@@ -125,6 +125,6 @@ step 5：可以通过 heroku run rake db:migrate 生成数据库和 heroku creat
 
 * http://first-site-of-limingth.herokuapp.com/ alive now!
 
-![first app snapshort](first-app-snapshot.png)
+![first app snapshort](images/first-app-snapshot.png)
 
 	

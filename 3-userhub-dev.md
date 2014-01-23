@@ -1,11 +1,36 @@
 ## 项目1：UserHub 开发
 
 ### 项目预备知识
-#### Form 表单
-* [Udactiy Web Development - Forms](https://www.udacity.com/course/viewer#!/c-cs253/l-48736183/m-48734267)
+
+#### Form 表单基础
+学习视频 [Udactiy Web Development - Forms](https://www.udacity.com/course/viewer#!/c-cs253/l-48736183/m-48734267)，并掌握以下知识点。
+
+* GET 和 POST 两种表单提交方式的区别(images/diff-in-get-post.png)
+	- GET includes parameters in url and POST includes it in http request body
+* 常见的 input 标签的 type 类型
+	- text, password, submit
+	- checkbox, radio, 
+* 掌握 input 标签 
+	- value 属性
+* 掌握 label 标签
+* 掌握 select 和 option 标签 （Dropdowns下拉菜单）
+	- value 标签属性 vs content 标签内容 (value wins over content)
+* validation 
 
 #### 数据库基础
-* [postgresql select](http://www.postgresqltutorial.com/postgresql-select/)
+学习视频 [Storing Data With PostgreSQL](http://www.youtube.com/watch?v=7EzzoULwWx8)，熟悉以下命令。
+
+* psql 和 psql -d (指定连接的数据库名称)
+* help (查看帮助信息)
+* CREATE DATABASE data_testing;
+* CREATE TABLE users (name varchar(255), movie varchar(255), number int);
+* \c data_testing 
+* \d 和 \d users
+* SELECT * from users;
+* INSERT INTO users (name,movie,number) VALUES('Ben','Braveheart',35);
+* SELECT * from users where number > 10;
+
+参考资料 [postgresql select](http://www.postgresqltutorial.com/postgresql-select/)
 
 #### MVC 设计模式
 * [intro to MVC of codeschool](https://www.codeschool.com/code_tv/intro-to-mvc)
