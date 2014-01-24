@@ -599,4 +599,4 @@ step 7: 修改 edit 和删除 delete 记录
 * refresh http://user-hub.herokuapp.com
 	- See UserHub project hosted on heroku
 
-![userhub on heroku](userhub-on-heroku.png)
+![userhub on heroku](images/userhub-on-heroku.png)
