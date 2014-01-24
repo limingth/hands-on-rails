@@ -553,4 +553,50 @@ step 7: 修改 edit 和删除 delete 记录
 * git add .
 * git commit -a -m "Styling with Bootstrap"
 
+### git push
+* git branch --set-upstream-to=origin/master master
+* git push --set-upstream origin master
+* git pull
+* git push
 
+### git push heroku master
+* heroku login
+
+		limingth@gmail ~/Github/UserHub$ heroku login
+		Enter your Heroku credentials.
+		Email: limingth@gmail.com
+		Password (typing will be hidden): 
+		Authentication successful.
+		limingth@gmail ~/Github/UserHub$ 
+
+* heroku create user-hub
+
+		limingth@gmail ~/Github/UserHub$ heroku create user-hub
+		Creating user-hub... done, stack is cedar
+		http://user-hub.herokuapp.com/ | git@heroku.com:user-hub.git
+		Git remote heroku added
+
+* git push heroku master
+
+* heroku run rake db:setup
+
+* visit http://user-hub.herokuapp.com
+
+### Add some gem need by heroku
+* vi Gemfile
+
+		  3 ruby '2.0.0'
+		  4 
+		  5 gem 'rails_12factor'
+
+* bundle install
+
+### git push Again
+* git commit -a -m "add rails_12factor"
+* git push
+* git push heroku master
+
+* refresh http://user-hub.herokuapp.com
+	- See UserHub project hosted on heroku
+
+![userhub on heroku](userhub-on-heroku.png)
