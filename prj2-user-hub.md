@@ -605,3 +605,98 @@ step 8: 部署到 Heroku 网站 Deploy on heroku
 	- see UserHub project hosted on heroku
 
 ![userhub on heroku](images/userhub-on-heroku.png)
+
+
+step 9: 闪烁消息 Flash Message
+------------------------------------------------------
+
+### Add Flash message in controller
+* vi app/controllers/users_controller.rb 
+
+		  2   def index
+		  3     @users = User.all
+		  4     flash[:success] = "User all retrieved."
+		  5     @user = User.new
+		  6   end
+
+### Show Flash message in view
+* vi app/views/layouts/application.html.erb
+
+		<body>
+
+		<div class="container">
+		  <div class="row">
+		        <div class="span9">
+		        <%= yield %>
+		        </div>
+
+		        <div class="span3">
+		            <% flash.each do |name, msg| %>
+		              <%= content_tag :div, msg, id: "flash_#{name}" %>
+		            <% end %> 
+		        </div>  
+		  </div>    
+		</div>
+
+		</body>
+
+### Add all method with a flash message
+
+		limingth@gmail ~/Github/UserHub$ cat app/controllers/users_controller.rb 
+		class UsersController < ApplicationController
+		  def index
+		    @users = User.all
+		    flash[:success] = "User all retrieved."
+		    @user = User.new
+		  end
+
+		  def new
+		    @user = User.new
+		    flash[:success] = "User new."
+		  end
+
+		  def create
+		    @user = User.new(user_params)
+		    if @user.save
+		      flash[:success] = "User create."
+		      redirect_to @user
+		    else
+		      render "new"
+		    end 
+		  end
+
+		  def show
+		    @user = User.find(params[:id])
+		    flash[:success] = "User show."
+		  end
+
+		  def edit
+		    @user = User.find(params[:id])
+		    flash[:success] = "User edit."
+		  end
+
+		  def update
+		    @user = User.find(params[:id])
+		    if @user.update_attributes(user_params)
+		      # Handle a successful update.
+		      flash[:success] = "User update."
+		      redirect_to @user
+		    else
+		      render 'edit'
+		    end
+		  end
+
+		  def destroy
+		    User.find(params[:id]).destroy
+		    flash[:success] = "User deleted."
+		    redirect_to users_url
+		  end
+
+		private
+		  def user_params
+		    params.require(:user).permit(:name, :email)
+		  end
+		end
+
+* refresh to see if flash message shows
+

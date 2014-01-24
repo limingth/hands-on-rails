@@ -39,8 +39,11 @@
 
 #### 风格化 Bootstrap Styling
 * [twitter-bootstrap-basics](http://railscasts.com/episodes/328-twitter-bootstrap-basics?view=asciicast)
+* [Default grid system](http://getbootstrap.com/2.3.2/scaffolding.html)
+	- row, span9
 
 #### 闪烁消息 Flash Message
+* [Looping Through Flash](http://railscasts.com/episodes/18-looping-through-flash)
 * [display flash messages](http://railscasts.com/episodes/329-more-on-twitter-bootstrap)
 
 #### 邮件发送 Sending Email
