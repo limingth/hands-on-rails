@@ -463,7 +463,7 @@ step 6: 风格化 Styling with Bootstrap
 * refresh localhost:3000 
 	- Object must be a Date, DateTime or Time object. nil given.
 
-![page with themed](page-with-themed.png)
+![page with themed](images/page-with-themed.png)
 
 
 step 7: 修改 edit 和删除 delete 记录
@@ -483,7 +483,7 @@ step 7: 修改 edit 和删除 delete 记录
 * refresh localhost:3000 
 	- see Edit User page
 
-![edit user page](edit-user-page.png)
+![edit user page](images/edit-user-page.png)
 
 ### Add update method
 

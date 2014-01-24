@@ -48,7 +48,7 @@
 * [sending html email](http://railscasts.com/episodes/312-sending-html-email?autoplay=true)
 
 ### UserHub 项目开发流程
-[UserHub Project step by step](https://github.com/limingth/myRoR/blob/master/5-user-hub-project.md)
+[UserHub Project step by step](https://github.com/limingth/hands-on-rails/blob/master/prj2-user-hub.md)
 
 * Step 1 - Build the project from scratch
 * Step 2 - Create the Landing Page
