@@ -714,11 +714,11 @@ step 10: 邮件发送 Sending Email
 		      :address              => "smtp.gmail.com",  
 		      :port                 => 587,  
 		      :domain               => "gmail.com",  
-		     :user_name            => "thasuresh", #Your user name
-		      :password             => "actionmailer", # Your password
+		      :user_name            => "yourname@gmail.com", #Your user name
+		      :password             => "yourpassword", # Your password
 		      :authentication       => "plain",  
 		      :enable_starttls_auto => true  
-		   }
+		}
 
 ### rails g mailer
 * rails generate mailer user_mailer
