@@ -553,11 +553,15 @@ step 7: 修改 edit 和删除 delete 记录
 * git add .
 * git commit -a -m "Styling with Bootstrap"
 
-### git push
+### git push to github
 * git branch --set-upstream-to=origin/master master
 * git push --set-upstream origin master
 * git pull
 * git push
+
+
+step 8: 部署到 Heroku 网站 Deploy on heroku
+------------------------------------------------------
 
 ### git push heroku master
 * heroku login
@@ -596,7 +600,8 @@ step 7: 修改 edit 和删除 delete 记录
 * git push
 * git push heroku master
 
+### Enjoy the project 2
 * refresh http://user-hub.herokuapp.com
-	- See UserHub project hosted on heroku
+	- see UserHub project hosted on heroku
 
 ![userhub on heroku](images/userhub-on-heroku.png)

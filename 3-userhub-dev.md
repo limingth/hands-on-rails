@@ -50,12 +50,12 @@
 ### UserHub 项目开发流程
 [UserHub Project step by step](https://github.com/limingth/hands-on-rails/blob/master/prj2-user-hub.md)
 
-* Step 1 - Build the project from scratch
-* Step 2 - Create the Landing Page
-* Step 3 - Enable pSQL and Create database
-* Step 4 - Modeling Students, Majors and Users for UserHub
-* Step 5 - Use MVC to view students info
-* Step 6 - New and delete students info
-* Step 7 - Bootstrap styling
-* Step 8 - Add Flash Message
-* Step 9 - Sending Email
+* step 1: 创建 user controller 来实现登录页面
+* step 2: 创建数据库 users 
+* step 3: 添加数据库 users 的记录并通过 Rails Console 确认
+* step 4: 修改 user controller 并通过页面显示
+* step 5: 修改 user view 页面通过表单输入添加用户
+* step 6: 风格化 Styling with Bootstrap
+* step 7: 修改 edit 和删除 delete 记录
+* step 8: 部署到 Heroku 网站 Deploy on heroku
+
