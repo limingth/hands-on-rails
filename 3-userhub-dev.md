@@ -61,4 +61,6 @@
 * step 6: 风格化 Styling with Bootstrap
 * step 7: 修改 edit 和删除 delete 记录
 * step 8: 部署到 Heroku 网站 Deploy on heroku
+* step 9: 闪烁消息 Flash Message
+* step 10: 邮件发送 Sending Email
 
