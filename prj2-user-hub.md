@@ -710,15 +710,15 @@ step 10: 邮件发送 Sending Email
 ### Create setup_mail.rb
 * vi config/initializers/setup_mail.rb
 
-	ActionMailer::Base.smtp_settings = {  
-	      :address              => "smtp.gmail.com",  
-	      :port                 => 587,  
-	      :domain               => "gmail.com",  
-	     :user_name            => "thasuresh", #Your user name
-	      :password             => "actionmailer", # Your password
-	      :authentication       => "plain",  
-	      :enable_starttls_auto => true  
-	   }
+		ActionMailer::Base.smtp_settings = {  
+		      :address              => "smtp.gmail.com",  
+		      :port                 => 587,  
+		      :domain               => "gmail.com",  
+		     :user_name            => "thasuresh", #Your user name
+		      :password             => "actionmailer", # Your password
+		      :authentication       => "plain",  
+		      :enable_starttls_auto => true  
+		   }
 
 ### rails g mailer
 * rails generate mailer user_mailer
@@ -726,21 +726,21 @@ step 10: 邮件发送 Sending Email
 ### Modify user_mailer.rb
 * vi app/mailer/user_mailer.rb
 
-	class UserMailer < ActionMailer::Base
-		default :from => "thasuresh@gmail.com"
-		 
-		def registration_confirmation(user)
-			mail(:to => user.email, :subject => "Registered")
+		class UserMailer < ActionMailer::Base
+			default :from => "thasuresh@gmail.com"
+			 
+			def registration_confirmation(user)
+				mail(:to => user.email, :subject => "Registered")
+			end
 		end
-	end
 
 ### Create registration_confirmation.html.erb
 * vi app/views/user_mailer/registration_confirmation.html.erb
 
-	Thank you for registering!
+		Thank you for registering!
 
 ### Modify users_controller.rb
 * vi app/controllers/users_controller.rb  
 
-	UserMailer.registration_confirmation(@user).deliver  
+		UserMailer.registration_confirmation(@user).deliver  
 
