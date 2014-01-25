@@ -40,13 +40,15 @@
 #### 风格化 Bootstrap Styling
 * [twitter-bootstrap-basics](http://railscasts.com/episodes/328-twitter-bootstrap-basics?view=asciicast)
 * [Default grid system](http://getbootstrap.com/2.3.2/scaffolding.html)
-	- row, span9
+	- row, span9, span3
 
 #### 闪烁消息 Flash Message
 * [Looping Through Flash](http://railscasts.com/episodes/18-looping-through-flash)
 * [display flash messages](http://railscasts.com/episodes/329-more-on-twitter-bootstrap)
 
 #### 邮件发送 Sending Email
+* [Action Mailer Basics](http://guides.rubyonrails.org/v3.2.14/action_mailer_basics.html)
+* [Action Mailer](http://api.rubyonrails.org/classes/ActionMailer/Base.html)
 * [sending email](http://railscasts.com/episodes/61-sending-email?autoplay=true)
 * [sending html email](http://railscasts.com/episodes/312-sending-html-email?autoplay=true)
 
