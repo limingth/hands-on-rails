@@ -37,6 +37,8 @@
 * [Getting Started with MVC](http://www.sitepoint.com/getting-started-with-mvc/)
 * 这个视频讲得很好，但是以前免费，现在要收费了。[Intro to MVC by CodeSchool](https://www.codeschool.com/code_tv/intro-to-mvc)
 
+![A detailed diagram of MVC in Rails](http://railstutorial.org/images/figures/mvc_detailed-full.png)
+
 #### 风格化 Bootstrap Styling
 * [twitter-bootstrap-basics](http://railscasts.com/episodes/328-twitter-bootstrap-basics?view=asciicast)
 * [Default grid system](http://getbootstrap.com/2.3.2/scaffolding.html)

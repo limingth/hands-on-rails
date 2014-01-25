@@ -554,11 +554,9 @@ step 7: 修改 edit 和删除 delete 记录
 * git commit -a -m "Styling with Bootstrap"
 
 ### git push to github
-* git branch --set-upstream-to=origin/master master
-* git push --set-upstream origin master
-* git pull
-* git push
-
+* initialize the GitHub repository UserHub withOUT a README file
+* git remote add origin git@github.com/limingth/UserHub.git
+* git push -u origin master
 
 step 8: 部署到 Heroku 网站 Deploy on heroku
 ------------------------------------------------------

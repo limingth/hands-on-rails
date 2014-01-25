@@ -74,3 +74,4 @@
 * [Ruby on Rails Guides (v3.2.14)](http://guides.rubyonrails.org/v3.2.14/) by http://guides.rubyonrails.org/
 * [Ruby on Rails Tutorial ](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book) by Michael Hartl
 * [RailsCasts](http://railscasts.com/)
+* [stackoverflow](http://stackoverflow.com/)
