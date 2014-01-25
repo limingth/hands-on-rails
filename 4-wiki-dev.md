@@ -4,7 +4,10 @@
 
 * User Model 
 
-  [参考阅读](http://railstutorial-china.org/chapter6.html)
+* 参考资料: 
+	- [Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
+	- [中文翻译版](http://railstutorial-china.org/chapter6.html)
+
 
 * Seed 概念
 
@@ -27,3 +30,7 @@
 * Gravatar 用户头像 
 
 
+### 参考资料: 
+
+* [Working with a Database: Active Record](http://books.google.com/books?id=KdvTAAAAQBAJ&pg=PA61&dq=“Working+with+a+Database”+rails&hl=zh-CN&sa=X&ei=fxPjUrHuH9HwoATkp4KYCw&ved=0CC8Q6AEwAA#v=onepage&q=“Working%20with%20a%20Database”%20rails&f=false)
+	- [Beginning Rails 4, 3rd Edition](http://it-ebooks.info/book/3030/)

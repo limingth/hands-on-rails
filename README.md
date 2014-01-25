@@ -73,5 +73,6 @@
 ### 参考教材
 * [Ruby on Rails Guides (v3.2.14)](http://guides.rubyonrails.org/v3.2.14/) by http://guides.rubyonrails.org/
 * [Ruby on Rails Tutorial ](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book) by Michael Hartl
+* [Beginning Rails 4, 3rd Edition](http://it-ebooks.info/book/3030/) by Adam Gamble, Cloves Carneiro Jr., Rida Al Barazi
 * [RailsCasts](http://railscasts.com/)
 * [stackoverflow](http://stackoverflow.com/)

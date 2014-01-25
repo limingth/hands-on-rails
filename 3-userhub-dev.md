@@ -17,6 +17,8 @@
 	- value 标签属性 vs content 标签内容 (value wins over content)
 * validation 
 
+参考资料： [HyperText Transfer Protocol](http://en.wikipedia.org/wiki/PATCH_(HTTP)#Request_methods)
+
 #### 数据库基础
 学习视频 [Storing Data With PostgreSQL](http://www.youtube.com/watch?v=7EzzoULwWx8)，熟悉以下命令。（时间1小时）
 
@@ -67,4 +69,6 @@
 * step 8: 部署到 Heroku 网站 Deploy on heroku
 * step 9: 闪烁消息 Flash Message
 * step 10: 邮件发送 Sending Email
+
+参考资料 [A demo app](http://ruby.railstutorial.org/chapters/a-demo-app#top)
 
