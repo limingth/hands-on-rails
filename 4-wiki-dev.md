@@ -2,18 +2,42 @@
 
 ### 项目预备知识
 
-* User Model 
+* 用户模型 User Model 
+	- 迁移文件 Data migration
+	- 控制台 rails console
+	- Active Record
+	- 验证存在性 validates
+	- 唯一性 uniqueness
 
-* 参考资料: 
-	- [Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
-	- [中文翻译版](http://railstutorial-china.org/chapter6.html)
+* Route 路由
+	- Users 资源对应的路由
+	- users_path
+	- new_user_path
+	- edit_user_path(user)
 
+* Layout 布局
+	- shared 目录
+	- render 渲染局部视图
+
+*  Sessions 控制器
+	- 设置路由关系
+	- SessionsHelper 模块
+	- session 函数
+	- current_user
 
 * Seed 概念
 
-* Layout 布局
+* will_paginate 分页
 
-* Route 路由
+* Ruby 提高
+	- Hash 初始化 
+	- form_for 生成表单代码
+	- link_to
+
+#### 参考资料: 
+* [Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
+* [中文翻译版](http://railstutorial-china.org/chapter6.html)
+
 
 ### 类 Wiki 项目开发流程
 
@@ -28,7 +52,8 @@
 * User Model 用户模型 
 
 * Gravatar 用户头像 
-
+	- gravatar_for
+ 
 
 ### 参考资料: 
 
