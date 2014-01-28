@@ -39,15 +39,33 @@
 
 ### 类 Wiki 项目开发流程
 
-* Create the Wikiful Landing Page
+* [Create the Wikiful Rails App](https://github.com/limingth/myRoR/blob/master/1-build-project-wikiful.md)
+	- Create the Wikiful Landing Page
+	- Push Your Local Repository up to Github
 
-* Database seed data
+* [The ActiveRecord ORM and Models in Rails](https://github.com/limingth/myRoR/blob/master/2-work-with-psql.md)
+	- Configure Rails to Work with PostgreSQL
+	- Modeling Articles, Categories, and Users for Wikiful
+	- Seed Your Data
  
-* Model-View-Controller interactive 
+* [Connecting the Thread for Wikiful](https://github.com/limingth/myRoR/blob/master/3-connect-thread-with-mvc.md)
+	- Connect the Thread for Articles
+	- Getting Your Model Data into Article Views
+	- Letting Users Write and Publish Articles
+	- Index and Show View for Categories
+	- Model-View-Controller interactive 
+	- A Better Welcome Page
 
-  [Sign up and password](http://www.youtube.com/watch?v=bOdn9EdUquo&feature=youtu.be)
+* [Layout and Styling with Twitter Bootstrap](https://github.com/limingth/myRoR/blob/master/4-style-wikiful-with-twitter-bootstrap.md)
+	- Adding Bootstrap
+	- Base Application Layout
+	- Checkout Twitter-Bootstrap-Rails Scaffolding
 
-* User Model 用户模型 
+* [User Authentication](https://github.com/limingth/myRoR/blob/master/6-user-authentication.md)
+	- Create the User Model and Sign Up Flow
+	- Create Sessions, Login/Logout, and Authorization Flow
+	- improve our routes
+	- automatically sign in users after they sign up for an account
 
 * Gravatar 用户头像 
 	- gravatar_for
@@ -57,3 +75,4 @@
 
 * [Working with a Database: Active Record](http://books.google.com/books?id=KdvTAAAAQBAJ&pg=PA61&dq=“Working+with+a+Database”+rails&hl=zh-CN&sa=X&ei=fxPjUrHuH9HwoATkp4KYCw&ved=0CC8Q6AEwAA#v=onepage&q=“Working%20with%20a%20Database”%20rails&f=false)
 	- [Beginning Rails 4, 3rd Edition](http://it-ebooks.info/book/3030/)
+* [Sign up and password](http://www.youtube.com/watch?v=bOdn9EdUquo&feature=youtu.be)
