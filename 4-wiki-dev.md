@@ -27,8 +27,6 @@
 
 * Seed 概念
 
-* will_paginate 分页
-
 * Ruby 提高
 	- Hash 初始化 
 	- form_for 生成表单代码
@@ -37,7 +35,7 @@
 #### 参考资料: 
 * [Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
 * [中文翻译版](http://railstutorial-china.org/chapter6.html)
-
+* [PostgreSQL INNER JOIN](http://www.postgresqltutorial.com/postgresql-inner-join)
 
 ### 类 Wiki 项目开发流程
 
