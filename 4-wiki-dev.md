@@ -9,17 +9,17 @@
 	- 验证存在性 validates
 	- 唯一性 uniqueness
 
-* Route 路由
+* 路由概念 Route 
 	- Users 资源对应的路由
 	- users_path
 	- new_user_path
 	- edit_user_path(user)
 
-* Layout 布局
+* 页面布局 Layout 
 	- shared 目录
 	- render 渲染局部视图
 
-*  Sessions 控制器
+* Sessions 控制器
 	- 设置路由关系
 	- SessionsHelper 模块
 	- session 函数
