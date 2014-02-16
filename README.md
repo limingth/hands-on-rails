@@ -33,8 +33,9 @@
 
 * [Lesson 4 - 项目2：类 Wiki 博客网站开发](4-wiki-dev.md)
   - 用户模型 User Model
-  - 页面布局 Layout 
   - 路由概念 Route 
+  - 页面布局 Layout 
+  - Sessions 控制器
   - 用户头像 Gravatar
   - 登录/退出/会话 Sign in/out and Session
   

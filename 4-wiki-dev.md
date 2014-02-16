@@ -25,17 +25,17 @@
 	- session 函数
 	- current_user
 
-* Seed 概念
-
 * Ruby 提高
+	- Seed 概念
 	- Hash 初始化 
 	- form_for 生成表单代码
 	- link_to
 
 #### 参考资料: 
-* [Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
-* [中文翻译版](http://railstutorial-china.org/chapter6.html)
+* [《Ruby on Rails Tutorial》- Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
+* [《Ruby on Rails 教程》中文翻译版](http://railstutorial-china.org/chapter6.html)
 * [PostgreSQL INNER JOIN](http://www.postgresqltutorial.com/postgresql-inner-join)
+* [Sign up and password](http://www.youtube.com/watch?v=bOdn9EdUquo&feature=youtu.be)
 
 ### 类 Wiki 项目开发流程
 
@@ -73,6 +73,5 @@
 
 ### 参考资料: 
 
-* [Working with a Database: Active Record](http://books.google.com/books?id=KdvTAAAAQBAJ&pg=PA61&dq=“Working+with+a+Database”+rails&hl=zh-CN&sa=X&ei=fxPjUrHuH9HwoATkp4KYCw&ved=0CC8Q6AEwAA#v=onepage&q=“Working%20with%20a%20Database”%20rails&f=false)
-	- [Beginning Rails 4, 3rd Edition](http://it-ebooks.info/book/3030/)
-* [Sign up and password](http://www.youtube.com/watch?v=bOdn9EdUquo&feature=youtu.be)
+* [《Beginning Rails 4》, 3rd Edition](http://it-ebooks.info/book/3030/)
+	- [Working with a Database: Active Record](http://books.google.com/books?id=KdvTAAAAQBAJ&pg=PA61&dq=“Working+with+a+Database”+rails&hl=zh-CN&sa=X&ei=fxPjUrHuH9HwoATkp4KYCw&ved=0CC8Q6AEwAA#v=onepage&q=“Working%20with%20a%20Database”%20rails&f=false)
