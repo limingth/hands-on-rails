@@ -37,8 +37,6 @@
 
 * 学会了 Rails 编程，以后就业前景怎么样？  
   - 搜索 [Rails 岗位情况](http://sou.zhaopin.com/jobs/searchresult.ashx?kw=ruby%20on%20rails&sm=0&p=1)
-  - [Rails 高级工程师待遇](http://jobs.zhaopin.com/120808399250010.htm?ssidkey=y&ss=201&ff=03)
-  - [Rails 工程师实习待遇](http://jobs.zhaopin.com/120808399250013.htm?ssidkey=y&ss=201)
 
 * 还等什么，赶紧试试... 
 
