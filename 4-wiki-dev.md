@@ -31,6 +31,16 @@
 	- form_for 生成表单代码
 	- link_to
 
+### Active Record 
+* [Active Record Associations](http://guides.rubyonrails.org/association_basics.html)
+	- has_many
+	- belongs_to
+	- through
+
+* [Active Record Validations](http://edgeguides.rubyonrails.org/active_record_validations.html)
+	- validates
+	- presence
+
 #### 参考资料: 
 * [《Ruby on Rails Tutorial》- Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
 * [《Ruby on Rails 教程》中文翻译版](http://railstutorial-china.org/chapter6.html)
@@ -67,7 +77,7 @@
 	- improve our routes
 	- automatically sign in users after they sign up for an account
 
-* Gravatar 用户头像 
+* [Gravatar 用户头像](http://railscasts.com/episodes/244-gravatar)
 	- gravatar_for
  
 ![wikiful-project-demo](images/wikiful-project-demo.png)
