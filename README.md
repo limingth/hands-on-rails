@@ -72,8 +72,9 @@
   - [example](https://www.pivotaltracker.com/s/projects/646869)
 
 ### 参考教材
-* [Ruby on Rails Guides (v3.2.14)](http://guides.rubyonrails.org/v3.2.14/) by http://guides.rubyonrails.org/
-* [Ruby on Rails Tutorial ](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book) by Michael Hartl
-* [Beginning Rails 4, 3rd Edition](http://it-ebooks.info/book/3030/) by Adam Gamble, Cloves Carneiro Jr., Rida Al Barazi
-* [RailsCasts](http://railscasts.com/)
-* [stackoverflow](http://stackoverflow.com/)
+* 网站 [Ruby on Rails Guides (v3.2.14)](http://guides.rubyonrails.org/v3.2.14/) by http://guides.rubyonrails.org/
+* 电子书 [Ruby on Rails Tutorial ](http://it-ebooks.info/book/1276/) by Michael Hartl 
+  - 网站 [Ruby on Rails Tutorial Learn Web Development with Rails (2nd Edition)](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book)
+* 电子书 [Beginning Rails 4, 3rd Edition](http://it-ebooks.info/book/3030/) by Adam Gamble, Cloves Carneiro Jr., Rida Al Barazi
+* 视频学习 [RailsCasts](http://railscasts.com/)
+* 问答社区 [stackoverflow](http://stackoverflow.com/)
