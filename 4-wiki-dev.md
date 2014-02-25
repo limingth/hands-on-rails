@@ -77,8 +77,9 @@
 	- improve our routes
 	- automatically sign in users after they sign up for an account
 
-* [Gravatar 用户头像](http://railscasts.com/episodes/244-gravatar)
+* [Gravatar 用户头像](http://railstutorial-china.org/chapter7.html#section-7-1-4)
 	- gravatar_for
+	- 视频学习 <http://railscasts.com/episodes/244-gravatar>
  
 ![wikiful-project-demo](images/wikiful-project-demo.png)
 

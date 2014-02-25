@@ -44,7 +44,8 @@
   - 密码加密和验证 bCrypt and has_secure_password
 
 * Lesson 6 
-  - 发帖功能 Tweet
+  - 数据模型 Twets data model
+  - 发帖功能 Post a Twet
 
 * Lesson 7 
   - 关注和取消关注 Follow and UnFollow

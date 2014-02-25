@@ -17,7 +17,7 @@
 
 
 ### 类 Twitter 微博网站项目开发流程
-<https://github.com/limingth/myTwetter>
+Hands-on Steps: <https://github.com/limingth/myTwetter>
 
 * 1. Rails new a project named Twetter
 * 2. Style Twetter using bootstrap
