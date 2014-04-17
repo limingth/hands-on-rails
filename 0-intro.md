@@ -74,6 +74,9 @@
 * sublime text 2 编辑工具  
   - [下载安装 sublime](http://www.sublimetext.com/2)
 
+* RubyMine - The Most Intelligent Ruby and Rails IDE
+  - [下载安装 RubyMine](http://www.jetbrains.com/ruby/)
+
 * Ruby on Windows 环境搭建
   - [Windows RubyInstaller](http://rubyinstaller.org/downloads/)
   - [Git for Windows](http://rubyinstaller.org/downloads/)
@@ -82,9 +85,11 @@
 
 * 1 本地安装了 Ruby + sublime text 2 ，通过 sublime 编写，运行 ruby yourprogram.rb 即可。
 
-* 2 注册并登录 nitrous.io ，通过 vim 编写，运行方法同上。
+* 2 IDE开发环境更适合Linux命令行和vim使用经验不丰富的新手，利用IDE可直接进入Rails开发学习，暂时不投入大量时间经历学习命令行和vim。
 
-**方法2 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1.**
+* 3 注册并登录 nitrous.io ，通过 vim 编写，运行方法同上。
+
+**方法3 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1.**
 
 ### 课后大作业
 完成 [Rails 开发视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1) 中的全部步骤，成功后将所有步骤的文本保存下来，并在本地桌面截图，然后提交。
