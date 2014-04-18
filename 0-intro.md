@@ -38,10 +38,6 @@
 * 学会了 Rails 编程，以后就业前景怎么样？  
   - 搜索 [Rails 岗位情况](http://sou.zhaopin.com/jobs/searchresult.ashx?kw=ruby%20on%20rails&sm=0&p=1)
 
-* 还等什么，赶紧试试... 
-
-  No more wait, Let's start！ [学习 Rails 开发介绍视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1)
-  
 ### 学习基础自测
 * C程序基础
   - 编译型和解释型语言的区别
@@ -92,4 +88,4 @@
 **方法3 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1.**
 
 ### 课后大作业
-完成 [Rails 开发视频](https://www.youtube.com/embed/u6Qu9T5lRqI?hd=1) 中的全部步骤，成功后将所有步骤的文本保存下来，并在本地桌面截图，然后提交。
+完成 [Rails 开发视频](http://tune.pk/video/1347642/NitrousIO-Develop-in-the-Cloud) 中的全部步骤，成功后将所有步骤的文本保存下来，并在本地桌面截图，然后提交。
