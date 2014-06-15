@@ -1,5 +1,7 @@
 
-# how to create an uBuntu Virtual Machine on AWS
+# How to use AWS
+
+## Create an uBuntu Virtual Machine on AWS
 
 ### Register on aws.amazon.com
 
