@@ -89,3 +89,12 @@
    
 * http://54.183.64.52:3000/
     
+#### be careful of your database.yml when using pg
+    $ cat config/database.yml 
+    development:
+      adapter: postgresql
+      database: wikiful_development
+      encoding: unicode
+      pool: 5
+      timeout: 5000
+
