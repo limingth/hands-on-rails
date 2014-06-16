@@ -77,7 +77,7 @@
   - [Windows RubyInstaller](http://rubyinstaller.org/downloads/)
   - [Git for Windows](http://rubyinstaller.org/downloads/)
 
-完成上述工作后，你有两种方法写所有程序：
+完成上述工作后，你有4种方法写所有程序：
 
 * 1 本地安装了 Ruby + sublime text 2 ，通过 sublime 编写，运行 ruby yourprogram.rb 即可。
 
@@ -85,7 +85,9 @@
 
 * 3 注册并登录 nitrous.io ，通过 vim 编写，运行方法同上。
 
-**方法3 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1.**
+* 4 基于 Chrome 浏览器，登录 [uBuntu 14.04 桌面] (http://54.183.64.52:6080/vnc.html?host=54.183.64.52&port=6080&password=maodou&autoconnect=true)
+
+**方法3 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1和方法4.**
 
 ### 课后大作业
 完成 [Rails 开发视频](http://tune.pk/video/1347642/NitrousIO-Develop-in-the-Cloud) 中的全部步骤，成功后将所有步骤的文本保存下来，并在本地桌面截图，然后提交。
