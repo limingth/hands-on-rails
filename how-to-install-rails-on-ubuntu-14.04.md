@@ -33,7 +33,8 @@
 
 ### install postgresql
     sudo apt-get -y install postgresql-9.3
-    
+    sudo apt-get -y install postgresql-server-dev-9.3 
+     
 #### check psql after installation
     $ sudo -u postgres psql postgres
     psql (9.3.4)
@@ -59,4 +60,32 @@
      template1 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
                |          |          |             |             | postgres=CTc/postgres
     (4 rows)
+    
+## bundle install
+
+### install pg
+    $ gem install pg 
+    $ bundle install
+    $ gem install rdoc-data; rdoc-data --install
+    
+### create user ubuntu and alter role
+    $ rails server
+    FATAL: role "ubuntu" does not exist
+    $ sudo -u postgres createuser ubuntu
+    $ sudo -u postgres psql -c 'alter user ubuntu with createdb' postgres
+    
+    ubuntu@ip-172-31-2-44:~/Github/UserHub$ sudo -u postgres createuser ubuntu
+    createuser: creation of new role failed: ERROR:  role "ubuntu" already exists
+    ubuntu@ip-172-31-2-44:~/Github/UserHub$ sudo -u postgres psql -c 'alter user ubuntu with createdb' postgres
+    ALTER ROLE
+    ubuntu@ip-172-31-2-44:~/Github/UserHub$ createdb
+    
+### create db
+    $ rake db:create
+    $ rake db:migrate
+
+### rails server
+    $ rails server
+   
+* http://54.183.64.52:3000/
     
