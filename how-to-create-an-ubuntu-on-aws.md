@@ -69,6 +69,10 @@
     - change profile the color
 * Key 's' and 'd' can not input
     - gsettings reset org.gnome.desktop.wm.keybindings panel-main-menu
+* change user ubuntu password
+    - sudo vi /etc/shadow  
+    - delete ! between first : and second :    (ubuntu::16237:0:99999:7:::)
+* 
     
 
 ### Install git
