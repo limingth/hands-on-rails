@@ -1,7 +1,7 @@
 
 # how-to-install-rails-on-ubuntu-14.04
 
-## git and ruby
+##1 git and ruby
 * http://askubuntu.com/questions/452243/what-versions-of-ruby-are-supported-in-14-04
 
 ### install git
@@ -16,7 +16,7 @@
     ubuntu@ip-172-31-2-44:~$ ruby -v
     ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-linux-gnu]
   
-## rails
+##2 rails
 
 * https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-ubuntu-14-04-using-rvm
 
@@ -27,7 +27,7 @@
     ubuntu@ip-172-31-2-44:~$ rails -v
     Rails 4.1.1
 
-## postgresql
+##3 postgresql
 
 * https://help.ubuntu.com/community/PostgreSQL
 
@@ -41,4 +41,22 @@
     
     postgres=# \password postgres
     (input maodou)
+    
+    $ sudo -u postgres createdb mydb
+    $ sudo -u postgres psql
+    psql (9.3.4)
+    Type "help" for help.
+    
+    postgres=# \h
+    postgres=# \list
+                                      List of databases
+       Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
+    -----------+----------+----------+-------------+-------------+-----------------------
+     mydb      | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+     postgres  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+     template0 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+               |          |          |             |             | postgres=CTc/postgres
+     template1 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+               |          |          |             |             | postgres=CTc/postgres
+    (4 rows)
     
