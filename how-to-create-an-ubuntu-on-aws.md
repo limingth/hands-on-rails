@@ -64,6 +64,13 @@
 
 * http://askubuntu.com/questions/452497/14-04-vnc-xstartup-file
 
+### Some problem very faint
+* Terminal all black
+    - change profile the color
+* Key 's' and 'd' can not input
+    - gsettings reset org.gnome.desktop.wm.keybindings panel-main-menu
+    
+
 ### Install git
     ubuntu@ip-172-31-2-44:~$ sudo apt-get install git
 
