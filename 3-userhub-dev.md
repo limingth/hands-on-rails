@@ -27,10 +27,11 @@
 * CREATE DATABASE data_testing;
 * CREATE TABLE users (name varchar(255), movie varchar(255), number int);
 * \c data_testing 
-* \d 和 \d users
+* \d 和 \d users (查看数据库中的表)
 * SELECT * from users;
 * INSERT INTO users (name,movie,number) VALUES('Ben','Braveheart',35);
 * SELECT * from users where number > 10;
+* DELETE FROM users where id = 2;
 
 参考资料 [postgresql select](http://www.postgresqltutorial.com/postgresql-select/)
 
