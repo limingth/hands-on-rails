@@ -26,7 +26,7 @@
 * help (查看帮助信息)
 * CREATE DATABASE data_testing;
 * CREATE TABLE users (name varchar(255), movie varchar(255), number int);
-* \c data_testing 
+* \c db_name (连接数据库) 
 * \d 和 \d users (查看数据库中的表)
 * SELECT * from users;
 * INSERT INTO users (name,movie,number) VALUES('Ben','Braveheart',35);
