@@ -72,7 +72,9 @@
 * change user ubuntu password
     - sudo vi /etc/shadow  
     - delete ! between first : and second :    (ubuntu::16237:0:99999:7:::)
-* 
+* tab can not complete
+    - http://ubuntuforums.org/archive/index.php/t-1771058.html
+    - line 112:       <property name="&lt;Super&gt;Tab" type="empty"/>
     
 
 ### Install git
