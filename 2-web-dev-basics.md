@@ -92,5 +92,4 @@ Heroku是一个网络服务，你将Rails应用程序上传到Heroku，由Heroku
 * 参考资料  
     - [Heroku Dev Center](https://devcenter.heroku.com/)
     - [Getting Started with Rails 4.x on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
-
-
+    - [Install Apache2 + rails](http://blog.csdn.net/abbuggy/article/details/8245941)
