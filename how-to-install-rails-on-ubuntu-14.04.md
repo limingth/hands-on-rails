@@ -27,6 +27,11 @@
     ubuntu@ip-172-31-2-44:~$ rails -v
     Rails 4.1.1
 
+### install nodejs
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get -y update
+    sudo apt-get -y install nodejs
+
 ##3 postgresql
 
 * https://help.ubuntu.com/community/PostgreSQL
