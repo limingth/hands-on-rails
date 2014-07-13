@@ -16,6 +16,8 @@
     ubuntu@ip-172-31-2-44:~$ ruby -v
     ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-linux-gnu]
   
+* see also https://coderwall.com/p/4imsra
+* 
 ##2 rails
 
 * https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-ubuntu-14-04-using-rvm
