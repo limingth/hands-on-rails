@@ -103,3 +103,9 @@
       pool: 5
       timeout: 5000
 
+##4 install mysql
+    $ brew install mysql
+    $ gem install mysql2 -- --with-mysql-dir=/usr/local/opt/mysql/ --with-mysql-include=/usr/local/opt/mysql/include/mysql --with-mysql-config=/usr/local/opt/mysql/bin/mysql_config --with-opt-lib=/usr/local/opt/mysql/lib
+
+
+
