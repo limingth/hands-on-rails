@@ -85,7 +85,7 @@
 
 * 3 注册并登录 nitrous.io ，通过 vim 编写，运行方法同上。
 
-* 4 基于 Chrome 浏览器，登录 [uBuntu 14.04 桌面] (http://54.183.64.52:6080/vnc.html?host=54.183.64.52&port=6080&password=maodou&autoconnect=true)
+* 4 基于 Chrome 浏览器，登录云主机 [uBuntu 14.04 桌面] (http://54.193.10.3:6080/vnc.html?password=maodou&autoconnect=true)
 
 **方法3 主要侧重于在安装本地环境前的体验和测试，而在日常开发中，更为频繁使用的是方法1和方法4.**
 
