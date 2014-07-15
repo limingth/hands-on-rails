@@ -77,6 +77,10 @@
   - [Windows RubyInstaller](http://rubyinstaller.org/downloads/)
   - [Git for Windows](http://rubyinstaller.org/downloads/)
 
+* 连接到阿里云主机
+  - [网络测速](http://www.speedtest.cn/httptest?url=182.92.160.153)
+  - 在 10M 光纤家庭宽度的条件下，网页打开速度平均为 0.086秒
+ 
 完成上述工作后，你有4种方法写所有程序：
 
 * 1 本地安装了 Ruby + sublime text 2 ，通过 sublime 编写，运行 ruby yourprogram.rb 即可。
