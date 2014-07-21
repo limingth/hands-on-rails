@@ -92,4 +92,29 @@
 
 ### Add swap vm to ubuntu
 * https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
-* 
+
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo swapon -s
+    Filename				Type		Size	Used	Priority
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo dd if=/dev/zero of=/swapfile bs=1024 count=512k
+    524288+0 records in
+    524288+0 records out
+    536870912 bytes (537 MB) copied, 14.6051 s, 36.8 MB/s
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo mkswap /swapfile
+    Setting up swapspace version 1, size = 524284 KiB
+    no label, UUID=74eea1ba-6a37-40c5-bda3-de7e4a5fb5ad
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo swapon /swapfile
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo swapon -s
+    Filename				Type		Size	Used	Priority
+    /swapfile                               file		524284	0	-1
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo nano /etc/fstab
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ cat /etc/fstab
+    LABEL=cloudimg-rootfs	/	 ext4	defaults	0 0
+    /swapfile       none    swap    sw      0       0 
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ echo 10 | sudo tee /proc/sys/vm/swappiness
+    10
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ echo vm.swappiness = 10 | sudo tee -a /etc/sysctl.conf
+    vm.swappiness = 10
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo chown root:root /swapfile 
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ sudo chmod 0600 /swapfile
+    ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ 
+
