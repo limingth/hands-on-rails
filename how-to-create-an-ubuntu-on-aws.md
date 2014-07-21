@@ -8,7 +8,12 @@
 
 ### Create an instance of uBuntu 12.04 in ec2
 * https://console.aws.amazon.com/ec2/v2/home
-* ubuntu-precise-12.04-amd64-server-20140529 (ami-0c5b5f49)
+* Select your region at right-top corner
+  - Asia Pacific (Singapore)
+  - US West (N. California)
+* Launch Instance (Free tier only)
+  - Community AMIs (Ubuntu + 64-bit + EBS)
+  - ubuntu/images/ebs/ubuntu-precise-12.04-amd64-server-20130527 - ami-085b155a
 
 ### Lauch your instance
 * Select create a pair key
