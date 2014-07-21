@@ -119,7 +119,7 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
     ubuntu@ip-172-31-3-33:~/KeyBox-jetty$ 
 
 ### Change SSH login to PasswordAuthentication
-    
+    $ sudo vi /etc/ssh/sshd_config 
     # Change to no to disable tunnelled clear text passwords
     #PasswordAuthentication no
     UseDNS no
