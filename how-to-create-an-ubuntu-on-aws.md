@@ -24,12 +24,13 @@
 
 ### Connect to uBuntu using SSH
     chmod 400 pplinux.pem 
-    ssh -i pplinux.pem ubuntu@54.183.64.52
+    ssh -i pplinux.pem ubuntu@54.254.139.77
 
 ### Install vnc4server
     ubuntu@ip-172-31-2-44:~$ pwd
     /home/ubuntu
-    ubuntu@ip-172-31-2-44:~$ sudo apt-get install vnc4server
+    ubuntu@ip-172-31-2-44:~$ sudo apt-get update
+    ubuntu@ip-172-31-2-44:~$ sudo apt-get install vnc4server -y
 
 ### VNC viewer to test
 * connect and you will see a shell
