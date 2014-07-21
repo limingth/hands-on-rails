@@ -90,3 +90,6 @@
 ### Install git
     ubuntu@ip-172-31-2-44:~$ sudo apt-get install git
 
+### Add swap vm to ubuntu
+* https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
+* 
