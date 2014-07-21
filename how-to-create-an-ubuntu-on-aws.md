@@ -125,3 +125,7 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
     UseDNS no
     AddressFamily inet
     PasswordAuthentication yes
+
+### Modify login prompt
+    export PS1="\u@54.254.139.77 \w$ "
+    hostname "maodou.us"
