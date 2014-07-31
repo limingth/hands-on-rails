@@ -79,3 +79,6 @@
 * 电子书 [Beginning Rails 4, 3rd Edition](http://it-ebooks.info/book/3030/) by Adam Gamble, Cloves Carneiro Jr., Rida Al Barazi
 * 视频学习 [RailsCasts](http://railscasts.com/)
 * 问答社区 [stackoverflow](http://stackoverflow.com/)
+
+### 教材修订
+＊魏治成 weizhicheng19910103@gmail.com
