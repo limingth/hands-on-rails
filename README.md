@@ -81,4 +81,4 @@
 * 问答社区 [stackoverflow](http://stackoverflow.com/)
 
 ### 教材修订
-＊魏治成 weizhicheng19910103@gmail.com
+* 魏治成 weizhicheng19910103@gmail.com
