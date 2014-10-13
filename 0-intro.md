@@ -36,7 +36,7 @@
   在网站首页左侧有一个视频，大约7分钟，看完这个视频再花15分钟做一遍，你就可以实现你的第一个 Rails 程序。
 
 * 学会了 Rails 编程，以后就业前景怎么样？  
-  - 搜索 [Rails 岗位情况](http://sou.zhaopin.com/jobs/searchresult.ashx?kw=ruby%20on%20rails&sm=0&p=1)
+  - Rails 岗位情况 [智联招聘搜索](http://sou.zhaopin.com/jobs/searchresult.ashx?kw=ruby%20on%20rails&sm=0&p=1) [拉勾网搜索](http://www.lagou.com/jobs/list_ruby%20on%20rails?kd=ruby+on+rails&spc=&pl=&gj=&xl=&yx=&gx=&st=&labelWords=&lc=&workAddress=&city=&requestId=)
 
 ### 学习基础自测
 * C程序基础
