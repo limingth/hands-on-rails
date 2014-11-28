@@ -139,7 +139,8 @@
 
     `rails g resource tag`
 
-
+### 3 View a live demo 
+http://sharedin.herokuapp.com/
 
 
 
