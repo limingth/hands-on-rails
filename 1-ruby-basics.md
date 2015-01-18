@@ -19,7 +19,7 @@
 
 提示：可以用 diff 命令比较文件差别
 
-* [熟悉 Unit 基本命令进行文件目录操作](http://people.ischool.berkeley.edu/~kevin/unix-tutorial/section4.html)
+* [熟悉 Unix 基本命令进行文件目录操作](http://people.ischool.berkeley.edu/~kevin/unix-tutorial/section4.html)
 
 * 注释写法  
 <https://github.com/limingth/myRoR/blob/master/NCRoR/1.rb>
