@@ -23,6 +23,9 @@
 
 *- 太好了，你真是一个勤奋好学的孩子，那么接下来挑战一下自己吧。试试？[Set up Git](https://help.github.com/articles/set-up-git)*
 
+#### 扩展阅读材料
+* https://www.atlassian.com/git/tutorials/undoing-changes
+
 ### GitHub
 *- 之前你应该已经注册好了 github 帐号吧？*
 
