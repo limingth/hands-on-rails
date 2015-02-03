@@ -332,7 +332,11 @@ step 5: 修改 user view 页面通过表单输入添加用户
 		    else
 		      render "new"
 		    end 
-		  end 
+		  end
+		  
+		  def show
+		    @user = User.find(params[:id])
+		  end		  
 
 		private
 		  def user_params
